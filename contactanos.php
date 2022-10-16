@@ -75,7 +75,7 @@
                         <span class="checkbox__text">Enviar una copia del mensaje a mi correo.</span>
                     </div>
 		    <div class="form_group">
-                        <div class="g-recaptcha" data-sitekey="6LcAO24iAAAAADR9AFb9sKkGjUjNmmrUZsOplp76"></div>
+                        <div class="g-recaptcha" data-sitekey="6Lc1Q04iAAAAAF_SehvuxQjSqCNnaSSqQEn5XMpE"></div>
                     </div>
 
                 </div>
