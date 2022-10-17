@@ -147,35 +147,8 @@
     </main>
 
 
-    <section class="modal">
-        <div class="modal__container">
-            <div class="modal__title">
-                <h1 class="text__title">Actualizar Plan</h1>
-                <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
-            </div>
-            
-            <form action="" method="post" class="modal__form">
-                <div class="modal__input">
-                    <label for="">Plan:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Costo:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Duraci�n:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Descripci�n:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <input type="submit" class="btn" value="Actualizar">
-                </div>
-            </form>
-        </div>
+    <section class="modal" id="editarPlanModal">
+        
     </section>
 
     <script src="src/js/admin.js"></script>

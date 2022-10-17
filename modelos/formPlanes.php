@@ -28,5 +28,11 @@
             return eliminarDatos($sql);
         }
 
+        public function editarPlan($id,$nombre,$costo,$duracion,$descripcion){
+            $sql = "UPDATE info_planes SET nombre='".$nombre."', costo = '".$costo."', duracion= '".$duracion."', descripcion = '".$descripcion."' WHERE id='".$id."'";
+
+            return editarDatos($sql);
+        }
+
     }
 ?>

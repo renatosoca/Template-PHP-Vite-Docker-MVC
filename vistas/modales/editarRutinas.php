@@ -19,7 +19,7 @@ $datos = consultarDatos($sql);
                 <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
             </div>
             
-            <form action="" method="post" class="modal__form">
+            <form action="" class="modal__form">
             <input type="hidden" id="id_rutina_edit" value="<?php echo $datos["id"]?>">
                 <div class="modal__input">
                     <label for="">Nombre:</label>

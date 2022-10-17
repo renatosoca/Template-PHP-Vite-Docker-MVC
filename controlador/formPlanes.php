@@ -8,22 +8,24 @@
 
     $formPlanes = new formPlanes();
 
-    $nombrePlan = $_GET["nombre"];
-    $costoPlan = $_GET["costo"];
-    $duracionPlan = $_GET["duracion"];
-    $descripcionPlan = $_GET["descripcion"];
-    $fecha_creacion = date("d-m-Y");
-    $hora_creacion = date("H:i:s");
-    $nombre_creador = $_SESSION['nombre'];
+    
 
     if ($_GET["proceso"] == "crearPlan") {
+
+        $nombrePlan = $_GET["nombre"];
+        $costoPlan = $_GET["costo"];
+        $duracionPlan = $_GET["duracion"];
+        $descripcionPlan = $_GET["descripcion"];
+        $fecha_creacion = date("d-m-Y");
+        $hora_creacion = date("H:i:s");
+        $nombre_creador = $_SESSION['nombre'];
         
         $datos = $formPlanes->guardarPlan($nombrePlan,$costoPlan,$duracionPlan,$descripcionPlan,$fecha_creacion,$hora_creacion,$nombre_creador);
         
         if($datos == '1'){
-            echo "Se inserto los datos a la base con éxito.";
+            echo "1";
         }else{
-            echo "No hubo éxito al insertar los datos en la base.";
+            echo "0";
         }
 
         unset($datos);
@@ -44,12 +46,13 @@
                     <td class='table__td'>".$row["descripcion"]."</td>
                     <td class='table__td'>
                         <div class='table__btn'>
-                            <a href='../controlador/formPlanes.php?proceso=editarPlan&id=".$row["id"]."' class='icon'>
-                                <i class='fa-solid fa-pen-to-square btn__edit'></i>
-                            </a>
-                            <a href='../controlador/formPlanes.php?proceso=eliminarPlan&id=".$row["id"]."' class='icon'>
-                                <i class='fa-solid fa-trash btn__delete'></i>
-                            </a>
+                        <span class='icon bottom-edit' id='" .$row["id"]. "'>
+                        <i class='fa-solid fa-pen-to-square btn__edit'></i>
+                        </span>
+
+                        <span class='icon bottom-delete' id='" .$row["id"]. "'>
+                        <i class='fa-solid fa-trash btn__delete'></i>
+                        </span>
                         </div>
                     </td>
                 </tr>";
@@ -68,8 +71,33 @@
         $id = $_GET["id"];
         $datos = $formPlanes->eliminarFila($id);
 
-        if($datos == "1"){
-            header("Location: ../vistas/planes.php");
+        if($datos == '1'){
+            echo "1";
+        }else{
+            echo "0";
         }
+
+        unset($datos);
+        
+    }
+
+    if($_GET["proceso"] == "editarPlan"){
+
+        $id = $_GET["id"];
+        $nombre = $_GET["nombre"];
+        $costo = $_GET["costo"];
+        $duracion = $_GET["duracion"];
+        $descripcion = $_GET["descripcion"];
+        
+        $datos = $formPlanes ->editarPlan($id,$nombre,$costo,$duracion,$descripcion);
+        
+        if($datos == '1'){
+            echo "1";
+        }else{
+            echo "0";
+        }
+
+        unset($datos);
+        unset($id);
     }
 ?>
