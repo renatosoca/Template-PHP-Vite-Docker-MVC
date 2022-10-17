@@ -18,6 +18,15 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- AJAX -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- NOTIFY -->
+    <link rel="stylesheet" href="../css/themes/default.css">
+    <link rel="stylesheet" href="../css/alertify.css">
+    <script src="../js/alertify.js"></script>
+
      <!-- Logo -->
      <link rel="icon" href="./src/img/icon.png">
 
@@ -72,7 +81,7 @@
     <main class="main__container">
         <div id="btn-nav" class="main__btn btn">
             <i class="fa-solid fa-bars"></i>
-            <span> Menú</span>
+            <span> Menï¿½</span>
         </div>
 
         <div class="main__title">
@@ -82,41 +91,41 @@
         <div class="main__create">
             <h3 class="main__subtitle">Crear Rutina</h3>
 
-            <form action="" class="routines__create">
+            <form action="" class="routines__create" id="formRutinas">
                 <div class="routines__container">
                     <div class="routines__inputs">
                         <label for="">Nombre</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="nombre_rutinas" placeholder="Ingrese nombre" required>
                     </div>
                     <div class="routines__inputs">
                         <label for="">Lunes</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="lunes_rutinas" placeholder="Ingrese rutina" required>
                     </div>
                     <div class="routines__inputs">
                         <label for="">Martes</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="martes_rutinas" placeholder="Ingrese rutina" required>
                     </div>
                     <div class="routines__inputs">
                         <label for="">Miercoles</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="miercoles_rutinas" placeholder="Ingrese rutina" required>
                     </div>
     
                     <div class="routines__inputs">
                         <label for="">Jueves</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="jueves_rutinas" placeholder="Ingrese rutina" required>
                     </div>
                     <div class="routines__inputs">
                         <label for="">Viernes</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="viernes_rutinas" placeholder="Ingrese rutina" required>
                     </div>
                     <div class="routines__inputs">
                         <label for="">Sabado</label>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre">
+                        <input type="text" name="" id="sabado_rutinas" placeholder="Ingrese rutina" required>
                     </div>
                 </div>
                 
                 <div class="routines__btn">
-                    <button type="submit" class="btn btn-routine">Crear</button>
+                    <input id="crearRutinas" type="submit" class="btn btn-routine">Crear</input>
                 </div>
                 
             </form>
@@ -140,163 +149,17 @@
                     </tr>
                 </thead>
                 <tbody class="table__body" id="table-body">
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre 1</td>
-                        <td class="table__td">Lunes1</td>
-                        <td class="table__td">Martes 1</td>
-                        <td class="table__td">Miercoles 11</td>
-                        <td class="table__td">Jueves 1</td>
-                        <td class="table__td">Vierves 1</td>
-                        <td class="table__td">Sabado 1</td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="" class="icon">
-                                    <i class="fa-solid fa-repeat btn__asigne"></i>
-                                </a>
-
-                                <a href="#" class="icon bottom-edit">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre 1</td>
-                        <td class="table__td">Lunes1</td>
-                        <td class="table__td">Martes 1</td>
-                        <td class="table__td">Miercoles 11</td>
-                        <td class="table__td">Jueves 1</td>
-                        <td class="table__td">Vierves 1</td>
-                        <td class="table__td">Sabado 1</td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-repeat btn__asigne"></i>
-                                </a>
-
-                                <a href="#" class="icon bottom-edit">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre 1</td>
-                        <td class="table__td">Lunes1</td>
-                        <td class="table__td">Martes 1</td>
-                        <td class="table__td">Miercoles 11</td>
-                        <td class="table__td">Jueves 1</td>
-                        <td class="table__td">Vierves 1</td>
-                        <td class="table__td">Sabado 1</td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-repeat btn__asigne"></i>
-                                </a>
-
-                                <a href="#" class="icon bottom-edit">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre 1</td>
-                        <td class="table__td">Lunes1</td>
-                        <td class="table__td">Martes 1</td>
-                        <td class="table__td">Miercoles 11</td>
-                        <td class="table__td">Jueves 1</td>
-                        <td class="table__td">Vierves 1</td>
-                        <td class="table__td">Sabado 1</td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-repeat btn__asigne"></i>
-                                </a>
-
-                                <a href="#" class="icon bottom-edit">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-
-                            </div>
-                        </td>
-                    </tr>
-
+                    
                 </tbody>
             </table>
 
         </div>
 
     </main>
-
-    <section class="modal">
-        <div class="modal__container">
-            <div class="modal__title">
-                <h1 class="text__title">Actualizar Plan</h1>
-                <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
-            </div>
-            
-            <form action="" method="post" class="modal__form">
-                <div class="modal__input">
-                    <label for="">Nombre:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Lunes:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Martes:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Miercoles:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Jueves:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Viernes:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <label for="">Sabado:</label>
-                    <input type="text" value="Ejemplo">
-                </div>
-                <div class="modal__input">
-                    <input type="submit" class="btn" value="Actualizar">
-                </div>
-            </form>
-        </div>
+    <section class="modal" id="modalEditar">
     </section>
-
-
     <script src="./src/js/admin.js"></script>
+    <script src="js/formRutinas.js"></script>
 
 </body>
 

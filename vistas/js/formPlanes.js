@@ -9,7 +9,7 @@ var listarTabla = function(){
             proceso: "listarTabla",
         },
         function (data) {
-            $("#listaPlanes").html(data);
+            $("#table-body").html(data);
         }
     )
 }

@@ -32,7 +32,6 @@
     <link rel="stylesheet" href="../css/themes/default.css">
     <link rel="stylesheet" href="../css/alertify.css">
     <script src="../js/alertify.js"></script>
-    <script src="js/formPlanes.js"></script>
 
      <!-- Logo -->
      <link rel="icon" href="./src/img/icon.png">
@@ -109,7 +108,7 @@
                         <th class="table__th">AcciÃ³n</th>
                     </tr>
                 </thead>
-                <tbody class="table__body" id="listaPlanes">
+                <tbody class="table__body" id="table-body">
                     
                 </tbody>
             </table>
@@ -165,11 +164,11 @@
                     <input type="text" value="Ejemplo">
                 </div>
                 <div class="modal__input">
-                    <label for="">Duración:</label>
+                    <label for="">Duraciï¿½n:</label>
                     <input type="text" value="Ejemplo">
                 </div>
                 <div class="modal__input">
-                    <label for="">Descripción:</label>
+                    <label for="">Descripciï¿½n:</label>
                     <input type="text" value="Ejemplo">
                 </div>
                 <div class="modal__input">

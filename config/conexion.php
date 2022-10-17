@@ -43,5 +43,11 @@ if(!function_exists('ejecutarConsulta')){
         return $query;
     }
 
+    function editarDatos($sql){
+        global $conexion;
+        $query = $conexion->query($sql);
+        return $query;
+    }
+
 }
 ?>
