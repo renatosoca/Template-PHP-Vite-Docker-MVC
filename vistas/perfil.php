@@ -74,7 +74,7 @@ include_once("../config/sesion.php");
     <main class="main__container">
         <div id="btn-nav" class="main__btn btn">
             <i class="fa-solid fa-bars"></i>
-            <span> Menú</span>
+            <span> Menï¿½</span>
         </div>
         
         <div class="main__title">
@@ -90,7 +90,7 @@ include_once("../config/sesion.php");
 
                     <div class="profile__content">
                         <div class="profile__plan">
-                            <h4>Membresía:</h4>
+                            <h4>Membresï¿½a:</h4>
                             <small>Premium</small>
                         </div>
 
@@ -168,39 +168,11 @@ include_once("../config/sesion.php");
         </div>
     </main>
 
-    <div class="modal">
-        <div class="modal__container">
-            <div class="modal__title">
-                <h1 class="text__title">Modificar Perfil</h1>
-                <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
-            </div>
-
-            <form action="" class="edit__form">
-                <div class="edit__input">
-                    <label for="">Usuario</label>
-                    <input type="text" placeholder="Ingrese su Usuario">
-                </div>
-    
-                <div class="edit__input">
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Ingrese su Nombre">
-                </div>
-    
-                <div class="edit__input">
-                    <label for="">Cambiar Contraseña</label>
-                    <input type="password" placeholder="Contraseña Antigua">
-                    <input type="password" placeholder="Contraseña Nueva">
-                </div>
-    
-                <div class="edit__input">
-                    <button type="submit" class="btn edit__btn">Guardar Cambios</button>
-                </div>
-            </form>
-        </div>
-        
+    <div class="modal" id="editarModalPerfil">
     </div>
 
     <script src="./src/js/admin.js"></script>
+    <script src="js/editarPerfil.js"></script>
 
 </body>
 
