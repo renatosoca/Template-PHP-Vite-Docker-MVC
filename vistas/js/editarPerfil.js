@@ -2,7 +2,7 @@ $(document).on("click",".bottom-edit",function (e){
     e.preventDefault();
     e.stopImmediatePropagation();
 
-    $("#modalEditar").load(
+    $("#editarModalPerfil").load(
         "../vistas/modales/editarPerfil.php?id=" + $(this).attr("id")
         );
 
@@ -17,30 +17,30 @@ $(document).on("click","#close-modal", function(e){
     $("#editarModalPerfil").removeClass("active");
 });
 
-$(document).on("click","#editar_rutina_modal",function (e){
+$(document).on("click","#editar_modal_perfil",function (e){
     e.preventDefault();
     e.stopImmediatePropagation();
 
-    if($("#usuario_perfil_edit").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
-    if($("#nombre_perfil_edit").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
-    if($("#passantigua_perfil_edit").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
-    if($("#passnueva_perfil_edit").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
+    if($("#usuario_editar_perfil").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
+    if($("#nombre_editar_perfil").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
+    if($("#passantigua_editar_perfil").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
+    if($("#passnueva_editar_perfil").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
     {
         $.get(
-            "../controlador/formRutinas.php",
+            "../controlador/editarPerfil.php",
             {
-                proceso: "editarRutinas",
-                id: $("#id_rutina_edit").val(),
-                usuario: $("#usuario_perfil_edit").val(),
-                nombre: $("#nombre_perfil_edit").val(),
-                passantigua: $("#passantigua_perfil_edit").val(),
-                passnueva: $("#passnueva_perfil_edit").val(),
+                proceso: "editarPerfil",
+                id: $("#id_editar_perfil").val(),
+                usuario: $("#usuario_editar_perfil").val(),
+                nombre: $("#nombre_editar_perfil").val(),
+                passantigua: $("#passantigua_editar_perfil").val(),
+                passnueva: $("#passnueva_editar_perfil").val(),
             },
             function (data) {
-                if(data == "1"){
+                if(data == 1){
                     alertify.success("Se edito edito tu perfil con éxito.");
                     $("#editarModalPerfil").removeClass("active");
-                }else if(data == "2"){
+                }else if(data == 2){
                     alertify.error("Error, tu contraseña actual es incorrecta.");
                 }else{
                     alertify.error("Error, inesperado.");

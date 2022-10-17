@@ -20,6 +20,17 @@ include_once("../config/sesion.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AJAX -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- NOTIFY -->
+    <link rel="stylesheet" href="../css/themes/default.css">
+    <link rel="stylesheet" href="../css/alertify.css">
+    <script src="../js/alertify.js"></script>
+
+     <!-- Logo -->
+     <link rel="icon" href="./src/img/icon.png">
 
 
 </head>
@@ -105,7 +116,7 @@ include_once("../config/sesion.php");
 
                 <div class="profile__notification">
                     <div class="notification__btn" id="table-body">
-                        <a href="#" class="btn btn__rigth btn__edit">Modificar Cuenta</a>
+                        <span id="<?php echo $_SESSION["id"] ?>"class="btn btn__rigth bottom-edit">Modificar Cuenta</span>
                     </div>
                     
                     <div class="notification__container">

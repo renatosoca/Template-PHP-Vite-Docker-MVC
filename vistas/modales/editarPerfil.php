@@ -20,11 +20,11 @@ $datos = consultarDatos($sql);
         <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
     </div>
 
-    <form action="" class="edit__form">
+    <form class="edit__form">
         <div class="edit__input">
             <input type="hidden" id="id_editar_perfil" value="<?php echo $datos["id"]?>">
             <label for="">Usuario</label>
-            <input type="text" id="nombre_editar_perfil" value="<?php echo $datos["usuario"]?>">
+            <input type="text" id="usuario_editar_perfil" value="<?php echo $datos["usuario"]?>">
         </div>
 
         <div class="edit__input">

@@ -21,6 +21,7 @@
                 echo "1";
                 $_SESSION['permiso']="1";
                 $_SESSION['nombre'] = $datos["nombre"];
+                $_SESSION["id"] = $datos["id"];
             }else if($datos["permiso"] == "0"){
                 echo "0";
                 $_SESSION['permiso']="0";
