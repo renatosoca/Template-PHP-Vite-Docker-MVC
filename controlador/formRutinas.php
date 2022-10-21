@@ -35,7 +35,7 @@
 
     if($_GET["proceso"] == "listarTabla"){
 
-        $html = "hola";
+        $html = "";
 
         $datos = $formRutinas->traerDatosTabla();
 
@@ -50,8 +50,8 @@
             <td class='table__td'>". $row["viernes"] ."</td>
             <td class='table__td'>". $row["sabado"] ."</td>
             <td class='table__td'>
+            
                 <div class='table__btn'>
-
                     <span class='icon btn__asigne' id='" .$row["id"]. "'>
                         <i class='fa-solid fa-repeat btn__asigne'></i>
                     </span>

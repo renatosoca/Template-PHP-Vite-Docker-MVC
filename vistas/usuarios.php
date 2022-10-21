@@ -21,6 +21,15 @@
      <!-- Logo -->
      <link rel="icon" href="./src/img/icon.png">
 
+     <!-- AJAX -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- NOTIFY -->
+    <link rel="stylesheet" href="../css/themes/default.css">
+    <link rel="stylesheet" href="../css/alertify.css">
+    <script src="../js/alertify.js"></script>
+
 
 </head>
 <body class="body">
@@ -86,111 +95,17 @@
             <table class="table">
                 <thead class="table__head">
                     <tr>
+                        <th class="table__th">Dni</th>
                         <th class="table__th">Nombre</th>
                         <th class="table__th">Email</th>
                         <th class="table__th">Celular</th>
                         <th class="table__th">Dirección</th>
-                        <th class="table__th">Cambiar Plan</th>
-                        <th class="table__th">Acciones</th>
+                        <th class="table__th">Plan</th>
+                        <th class="table__th">Foto</th>
                     </tr>
                 </thead>
-                <tbody class="table__body">
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre1</td>
-                        <td class="table__td">Email1</td>
-                        <td class="table__td">Celular1</td>
-                        <td class="table__td">Direccion1</td>
-                        <td class="table__td">
-                            <a href="" class="btn__flex icon">
-                                <i class="fa-solid fa-circle-plus btn__asigne"></i>
-                                <small class="text__asigned">Asignar</small>
-                            </a>
-                        </td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre1</td>
-                        <td class="table__td">Email1</td>
-                        <td class="table__td">Celular1</td>
-                        <td class="table__td">Direccion1</td>
-                        <td class="table__td">
-                            <a href="" class="btn__flex icon">
-                                <i class="fa-solid fa-circle-plus btn__asigne"></i>
-                                <small class="text__asigned">Asignar</small>
-                            </a>
-                        </td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre1</td>
-                        <td class="table__td">Email1</td>
-                        <td class="table__td">Celular1</td>
-                        <td class="table__td">Direccion1</td>
-                        <td class="table__td">
-                            <a href="" class="btn__flex icon">
-                                <i class="fa-solid fa-circle-plus btn__asigne"></i>
-                                <small class="text__asigned">Asignar</small>
-                            </a>
-                        </td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table__tr">
-                        <td class="table__td">Nombre1</td>
-                        <td class="table__td">Email1</td>
-                        <td class="table__td">Celular1</td>
-                        <td class="table__td">Direccion1</td>
-                        <td class="table__td">
-                            <a href="" class="btn__flex icon">
-                                <i class="fa-solid fa-circle-plus btn__asigne"></i>
-                                <small class="text__asigned">Asignar</small>
-                            </a>
-                        </td>
-                        <td class="table__td">
-                            <div class="table__btn">
-                                <a href="#" class="icon">
-                                    <i class="fa-solid fa-pen-to-square btn__edit"></i>
-                                </a>
-                                <form action="">
-                                    <button type="submit" class="icon">
-                                        <i class="fa-solid fa-trash btn__delete"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </td>
-                    </tr>
+                <tbody class="table__body" id="table-body">
+                   
 
                 </tbody>
             </table>
@@ -202,9 +117,10 @@
         </div>
 
     </main>
-
+    <section class="modal" id="modalEditar">
+    </section>
     <script src="src/js/admin.js"></script>
-
+    <script src="js/formUsuarios.js"></script>
 </body>
 
 </html>

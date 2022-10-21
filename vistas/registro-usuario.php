@@ -21,6 +21,15 @@
      <!-- Logo -->
      <link rel="icon" href="./src/img/icon.png">
 
+     <!-- AJAX -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- NOTIFY -->
+    <link rel="stylesheet" href="../css/themes/default.css">
+    <link rel="stylesheet" href="../css/alertify.css">
+    <script src="../js/alertify.js"></script>
+
 
 </head>
 <body class="body">
@@ -87,41 +96,41 @@
         </div>
 
         <div class="main__register">
-            <form action="" class="register__form">
+            <form action="" class="register__form" id="formUsuarios" >
                 <div class="register__container">
                     <div class="register__info">
                         <div class="register__input">
                             <label for="">Nombre Completo</label>
-                            <input type="text" placeholder="Ingrese su Nombre">
+                            <input type="text" id="nombreUsuario" placeholder="Ingrese su Nombre">
                         </div>
 
                         <div class="register__input">
                             <label for="">DNI</label>
-                            <input type="text" placeholder="Ingrese su Nombre">
+                            <input type="text" id="dniUsuario" placeholder="Ingrese su Nombre">
                         </div>
 
                         <div class="register__inputs">
                             <div class="register__email">
                                 <label for="">Email</label>
-                                <input type="email" placeholder="Ingrese su Email">
+                                <input type="email" id="emailUsuario" placeholder="Ingrese su Email">
                             </div>
 
                             <div class="register__phone">
                                 <label for="">Celular</label>
-                                <input type="tel" placeholder="Ingrese su Celular">
+                                <input type="tel" id="celularUsuario" placeholder="Ingrese su Celular">
                             </div>
                         </div>
 
                         <div class="register__input">
                             <label for="">Dirección</label>
-                            <input type="text" placeholder="Ingrese su Dirección">
+                            <input type="text" id="direccionUsuario" placeholder="Ingrese su Dirección">
                         </div>
 
                         <div class="register__select">
                             <label for="">Membresía</label>
-                            <select name="" id="">
-                                <option value="">Mensual</option>
-                                <option value="">Anual</option>
+                            <select name="" id="membresiaUsuario">
+                                <option value="Mensual">Mensual</option>
+                                <option value="Anual">Anual</option>
                             </select>
                         </div>
                     </div>
@@ -134,20 +143,20 @@
                         </div>
 
                         <div class="register__profile-file">
-                            <input class="profile__btn-file" type="file" placeholder="Subir imagen">
+                            <input class="profile__btn-file" type="file" id="fotoUsuario" placeholder="Subir imagen">
                         </div>
                         
                     </div>
                 </div>
 
-                <button class="btn register__btn" type="submit">Registrar</button>
+                <button class="btn register__btn" id="crearUsuarios" type="submit">Registrar</button>
             </form>
         </div>
 
     </main>
 
     <script src="src/js/admin.js"></script>
-
+    <script src="js/formUsuarios.js"></script>
 </body>
 
 </html>
