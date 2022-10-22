@@ -12,7 +12,13 @@
     <script src="https://kit.fontawesome.com/493971e1cb.js" crossorigin="anonymous"></script>
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/Login.css">
+
+    <!-- sWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
     <!-- AJAX -->
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -31,48 +37,69 @@
 
 </head>
 <body>
-    
-<!-- header section starts      -->
-<?php include './vistas/Templates-users/header-user.php'  ?>
-<!-- header section ends     -->
 
-
-<!-- Login section start -->
-<section class="login" id="formLogin">
-    <div class="login_container">
-        <div class="login_welcome">
-            <i class="fa-solid fa-circle-user"></i>
-            <h1 class="login_title">Iniciar Sesion</h1>
+    <div class="body-container">
+        <div class="body-white">
+            <div class="container form-container">
+                <h1>GYMPOWER</h1>
+                <form action="" class="form-login">
+                    <div class="login_group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="user" class="form_input" placeholder="Ingrese su Usuario">
+                    </div>
+        
+                    <div class="login_group">
+                        <i class="fa-sharp fa-solid fa-unlock"></i>
+                        <input type="password" id="password" class="form_input" placeholder="Ingrese su Password">
+                    </div>
+        
+                    <input type="submit" class="btn login_submit" id="enviar_login" value="Iniciar sesión">
+                </form>
+            </div>
         </div>
-
-        <form class ="login_form">
-
-            <div class="login_group">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="user" class="form_input" placeholder="Ingrese su Usuario">
+            
+        <div class="body-dark">
+            <!-- Swiper -->
+            <div class="swiper">
+                <div class="swiper swiperLoop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <small>#Fitness</small>
+                            <h4>DEBERIAS SER ADICTO</h4>
+                            <h3>SUPERARTE</h3>
+                            <h2>A TÍ MISMO</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <small>#Fitness</small>
+                            <h4>DEBERIAS SER ADICTO</h4>
+                            <h3>SUPERARTE</h3>
+                            <h2>A TÍ MISMO</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="login_group">
-                <i class="fa-sharp fa-solid fa-unlock"></i>
-                <input type="password" id="password" class="form_input" placeholder="Ingrese su Password">
-            </div>
-
-            <input type="submit" class="btn login_submit" id="enviar_login" value="Ingresar">
-
-        </form>
+        </div>
     </div>
- </section>
-<!-- Login section Ends -->
+    
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-
-<?php include './vistas/Templates-users/footer-user.php' ?>
-
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".swiperLoop", {
+      spaceBetween: 0,
+      loop:true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+</script>
 
 <script src="vistas/js/formLogin.js"></script>
 
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
 
 <!-- custom js file link  -->
 <script src="./js/script.js"></script>
