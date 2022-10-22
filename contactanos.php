@@ -7,28 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymPower | Contacto</title>
 
-    <link rel="preload" href="./images/icon.png" as="image">
+    <link rel="preload" href="./assets/images/icon.png" as="image">
 
     <!-- font awesome cdn link  -->
     <script src="https://kit.fontawesome.com/5cbce06bb4.js" crossorigin="anonymous"></script>
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- AJAX -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
     <!-- NOTIFY -->
-    <link rel="stylesheet" href="css/themes/default.css">
-    <link rel="stylesheet" href="css/alertify.css">
-    <script src="js/alertify.js"></script>
+    <link rel="stylesheet" href="./assets/themes/default.css">
+    <link rel="stylesheet" href="./assets/css/alertify.css">
+    <script src="./assets/js/alertify.js"></script>
     
     <!-- CAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Logo -->
-    <link rel="icon" href="./images/icon.png">
+    <link rel="icon" href="./assets/images/icon.png">
 
 </head>
 
@@ -47,7 +47,7 @@
         <form class="container form_c" id="formulario_contacto">
             <div class="form_container">
                 <div class="image_c">
-                    <img src="./images/contact.jpg" alt="imagen de contacto">
+                    <img src="./assets/images/contact.jpg" alt="imagen de contacto">
                 </div>
 
                 <div class="contact__content">
@@ -94,7 +94,7 @@
 <script src="vistas/js/formContacto.js"></script>
 
     <!-- custom js file link  -->
-    <script src="js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 

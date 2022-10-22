@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymPower</title>
 
-    <link rel="preload" href="./images/icon.png" as="image">
+    <link rel="preload" href="./assets/images/icon.png" as="image">
 
     <!-- font awesome cdn link  -->
     <script src="https://kit.fontawesome.com/5cbce06bb4.js" crossorigin="anonymous"></script>
@@ -15,22 +15,22 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- AJAX -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
     <!-- NOTIFY -->
-    <link rel="stylesheet" href="css/themes/default.css">
-    <link rel="stylesheet" href="css/alertify.css">
-    <script src="js/alertify.js"></script>
+    <link rel="stylesheet" href="./assets/themes/default.css">
+    <link rel="stylesheet" href="./assets/css/alertify.css">
+    <script src="./assets/js/alertify.js"></script>
     
     <!-- CAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Logo -->
-    <link rel="icon" href="./images/icon.png">
+    <link rel="icon" href="./assets/images/icon.png">
 
 </head>
 <body>
@@ -47,7 +47,7 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide slide" style="background-image: url(images/home1.jpg);">
+            <div class="swiper-slide slide" style="background-image: url(./assets/images/home1.jpg);">
                 <div class="content">
                     <span>Entrena con nosotros</span>
                     <h3>Hazte más fuerte que tus excusas.</h3>
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background-image: url(images/home2.jpg);">
+            <div class="swiper-slide slide" style="background-image: url(./assets/images/home2.jpg);">
                 <div class="content">
                     <span>ser fuerte, estar en forma</span>
                     <h3>Hazte más fuerte que tus excusas.</h3>
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background-image: url(images/home3.jpg);">
+            <div class="swiper-slide slide" style="background-image: url(./assets/images/home3.jpg);">
                 <div class="content">
                     <span>ser fuerte, estar en forma</span>
                     <h3>Hazte más fuerte que tus excusas.</h3>
@@ -83,7 +83,7 @@
 <section class="about" id="about">
 
     <div class="image">
-        <img loading="lazy" src="images/about.jfif" alt="Sobre Nosotros">
+        <img loading="lazy" src="./assets/images/about.jfif" alt="Sobre Nosotros">
     </div>
 
     <div class="content">
@@ -124,10 +124,10 @@
 
         <div class="box">
             <div class="image">
-                <img loading="lazy" src="images/f-img-1.jpg" alt="Caracteristica 1">
+                <img loading="lazy" src="./assets/images/f-img-1.jpg" alt="Caracteristica 1">
             </div>
             <div class="content">
-                <img loading="lazy" src="images/icon-1.png" alt="">
+                <img loading="lazy" src="./assets/images/icon-1.png" alt="">
                 <h3>Culturismo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
                 <a href="./contactanos.php" class="btn">Escribenos</a>
@@ -136,10 +136,10 @@
 
         <div class="box second">
             <div class="image">
-                <img loading="lazy" src="images/f-img-2.jpg" alt="Caracteristica 2">
+                <img loading="lazy" src="./assets/images/f-img-2.jpg" alt="Caracteristica 2">
             </div>
             <div class="content">
-                <img loading="lazy" src="images/icon-2.png" alt="">
+                <img loading="lazy" src="./assets/images/icon-2.png" alt="">
                 <h3>Gym por Hombres</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
                 <a href="./contactanos.php" class="btn">Escribenos</a>
@@ -148,10 +148,10 @@
 
         <div class="box">
             <div class="image">
-                <img loading="lazy" src="images/f-img-3.jpg" alt="imagen 3">
+                <img loading="lazy" src="./assets/images/f-img-3.jpg" alt="imagen 3">
             </div>
             <div class="content">
-                <img loading="lazy" src="images/icon-3.png" alt="icono 3">
+                <img loading="lazy" src="./assets/images/icon-3.png" alt="icono 3">
                 <h3>gym para Mujeres</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
                 <a href="./contactanos.php" class="btn">Escribenos</a>
@@ -214,7 +214,7 @@
     <div class="box-container">
 
         <div class="box">
-            <img loading="lazy" src="images/trainer-1.jpg" alt="">
+            <img loading="lazy" src="./assets/images/trainer-1.jpg" alt="">
             <div class="content">
                 <span>Nuestros Trainers</span>
                 <h3>Trainer 1</h3>
@@ -226,7 +226,7 @@
         </div>
 
         <div class="box">
-            <img loading="lazy" src="images/trainer-2.jpg" alt="">
+            <img loading="lazy" src="./assets/images/trainer-2.jpg" alt="">
             <div class="content">
                 <span>Nuestros Trainers</span>
                 <h3>Trainer 2</h3>
@@ -238,7 +238,7 @@
         </div>
 
         <div class="box">
-            <img loading="lazy" src="images/trainer-3.jpg" alt="">
+            <img loading="lazy" src="./assets/images/trainer-3.jpg" alt="">
             <div class="content">
                 <span>Nuestros Trainers</span>
                 <h3>Trainer 3</h3>
@@ -250,7 +250,7 @@
         </div>
 
         <div class="box">
-            <img loading="lazy" src="images/trainer-4.jpg" alt="">
+            <img loading="lazy" src="./assets/images/trainer-4.jpg" alt="">
             <div class="content">
                 <span>Nuestros Trainers</span>
                 <h3>Trainer 4</h3>
@@ -297,7 +297,7 @@
             <div class="swiper-slide slide">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
                 <div class="user">
-                    <img loading="lazy" src="images/pic-1.png" alt="">
+                    <img loading="lazy" src="./assets/images/pic-1.png" alt="">
                     <div class="info">
                         <h3>Cliente 1</h3>
                         <span>Dise�ador</span>
@@ -309,7 +309,7 @@
             <div class="swiper-slide slide">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
                 <div class="user">
-                    <img loading="lazy" src="images/pic-2.png" alt="">
+                    <img loading="lazy" src="./assets/images/pic-2.png" alt="">
                     <div class="info">
                         <h3>Cliente 1</h3>
                         <span>Dise�ador</span>
@@ -321,7 +321,7 @@
             <div class="swiper-slide slide">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
                 <div class="user">
-                    <img loading="lazy" src="images/pic-3.png" alt="">
+                    <img loading="lazy" src="./assets/images/pic-3.png" alt="">
                     <div class="info">
                         <h3>Cliente 1</h3>
                         <span>Dise�ador</span>
@@ -333,7 +333,7 @@
             <div class="swiper-slide slide">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
                 <div class="user">
-                    <img loading="lazy" src="images/pic-4.png" alt="">
+                    <img loading="lazy" src="./assets/images/pic-4.png" alt="">
                     <div class="info">
                         <h3>Cliente 1</h3>
                         <span>Dise�ador</span>
@@ -360,7 +360,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>

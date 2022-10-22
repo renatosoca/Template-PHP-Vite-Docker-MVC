@@ -6,34 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymPower | Login</title>
 
-    <link rel="preload" href="./images/icon.png" as="image">
+    <link rel="preload" href="./assets/images/icon.png" as="image">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/493971e1cb.js" crossorigin="anonymous"></script>
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="./css/Login.css">
+    <link rel="stylesheet" href="./assets/css/Login.css">
 
     <!-- sWIPER -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <!-- AJAX -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
     <!-- NOTIFY -->
-    <link rel="stylesheet" href="css/themes/default.css">
-    <link rel="stylesheet" href="css/alertify.css">
-    <script src="js/alertify.js"></script>
+    <link rel="stylesheet" href="./assets/themes/default.css">
+    <link rel="stylesheet" href="./assets/css/alertify.css">
+    <script src="./assets/js/alertify.js"></script>
 
     <!-- CAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Logo -->
-    <link rel="icon" href="./images/icon.png">
+    <link rel="icon" href="./assets/images/icon.png">
 
 </head>
 <body>
@@ -102,7 +99,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="./js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>
