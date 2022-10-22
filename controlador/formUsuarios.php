@@ -25,8 +25,11 @@
         
     if($datos == '1'){
         echo "1";
-        //insertar al login login
-    //$datos = $formUsuarios->registrarLogin($nombre,$usuario,$password,$permiso, $fecha,$hora,$creador);
+
+        $password = $dniUsuario . date("Y");
+
+        $datos = $formUsuarios->registrarLogin($nombreUsuario,$dniUsuario,$password,$fecha_creacion,$hora_creacion,$nombre_creador);
+
     }else{
         echo "0";
     }

@@ -14,6 +14,7 @@ if(!function_exists('ejecutarConsulta')){
     function insertarDatos($sql){
         global $conexion;
         $query = $conexion->query($sql);
+        mysqli_free_result($query);
         return $query;
     }
 
@@ -21,6 +22,7 @@ if(!function_exists('ejecutarConsulta')){
         global $conexion;
         $query = $conexion->query($sql);
         $row = mysqli_fetch_assoc($query);
+        mysqli_free_result($query);
         return $row;
     }
 
@@ -28,24 +30,28 @@ if(!function_exists('ejecutarConsulta')){
         global $conexion;
         $query = $conexion->query($sql);
         $row = mysqli_num_rows($query);
+        mysqli_free_result($query);
         return $row;
     }
 
     function traerDatosTabla($sql){
         global $conexion;
         $query = $conexion->query($sql);
+        mysqli_free_result($query);
         return $query;
     }
 
     function eliminarDatos($sql){
         global $conexion;
         $query = $conexion->query($sql);
+        mysqli_free_result($query);
         return $query;
     }
 
     function editarDatos($sql){
         global $conexion;
         $query = $conexion->query($sql);
+        mysqli_free_result($query);
         return $query;
     }
 

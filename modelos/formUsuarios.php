@@ -35,13 +35,13 @@
 
         return editarDatos($sql);
     }
-        // insertar al login
-       //public function registrarLogin($nombre,$usuario,$password,$permiso, $fecha,$hora,$creador){
-            //$sql = "INSERT INTO info_login (nombre,usuario,password,permiso, fecha_creacion,hora_creacion)
-           // VALUES ('".$nombre."','".$usuario."','".$password."','".$permiso."','".$fecha."','".$hora."','".$creador."')";
 
-           // return insertarDatos($sql); 
-  //  }
+       public function registrarLogin($nombre,$usuario,$password,$fecha,$hora,$creador){
+            $sql = "INSERT INTO info_login (nombre,usuario,password,permiso,fecha_creacion,hora_creacion,creador)
+           VALUES ('".$nombre."','".$usuario."','".$password."','0','".$fecha."','".$hora."','".$creador."')";
+
+           return insertarDatos($sql); 
+        }
 }
 
 ?>
