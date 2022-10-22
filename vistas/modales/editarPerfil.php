@@ -2,7 +2,7 @@
 
 require "../../config/conexion.php";
 
-$id = $_SESSION["id"];
+$id = $_GET["id"];
 
 $sql = "SELECT * from info_login WHERE id = '".$id."'";
 
