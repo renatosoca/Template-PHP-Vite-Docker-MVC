@@ -8,8 +8,6 @@
 
     $formPlanes = new formPlanes();
 
-    
-
     if ($_GET["proceso"] == "crearPlan") {
 
         $nombrePlan = $_GET["nombre"];
@@ -98,4 +96,5 @@
 
         unset($datos);
         unset($id);
+    }
 ?>
