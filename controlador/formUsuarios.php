@@ -15,20 +15,22 @@
     $emailUsuario = $_GET["email"];
     $celularUsuario = $_GET["celular"];
     $direccionUsuario = $_GET["direccion"];
-    $membresiaUsuario = $_GET["membresia"];
+    $planUsuario = $_GET["plan"];
     $fotoUsuario = $_GET['foto'];
     $fecha_creacion = date("d-m-Y");
     $hora_creacion = date("H:i:s");
     $nombre_creador = $_SESSION['nombre'];
+    
         
-    $datos = $formUsuarios->guardarUsuario($dniUsuario,$nombreUsuario,$emailUsuario,$celularUsuario,$direccionUsuario,$membresiaUsuario,$fotoUsuario,$fecha_creacion,$hora_creacion,$nombre_creador);
+    $datos = $formUsuarios->guardarUsuario($dniUsuario,$nombreUsuario,$emailUsuario,$celularUsuario,$direccionUsuario,$planUsuario,$fotoUsuario,$fecha_creacion,$hora_creacion,$nombre_creador);
         
     if($datos == '1'){
         echo "1";
 
         $password = $dniUsuario . date("Y");
 
-        $datos = $formUsuarios->registrarLogin($nombreUsuario,$dniUsuario,$password,$fecha_creacion,$hora_creacion,$nombre_creador);
+        //falta terminar - bleyomm, asignar usuario jalando en la base de datos
+        $datos = $formUsuarios->registrarLogin($nombreUsuario,$dniUsuario,$password,$fecha_creacion,$hora_creacion,$nombre_creador,$id_usuario);
 
     }else{
         echo "0";

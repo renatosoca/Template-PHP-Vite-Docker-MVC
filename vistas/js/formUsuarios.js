@@ -23,7 +23,7 @@ $(document).on("click","#crearUsuarios",function (e){
     if($("#emailUsuario").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
     if($("#celularUsuario").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
     if($("#direccionUsuario").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
-    if($("#membresiaUsuario").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
+    if($("#planUsuario").val() == ""){alertify.warning("Recuerda llenar todos los campos.");}else
           
     {
         $.get(
@@ -35,7 +35,7 @@ $(document).on("click","#crearUsuarios",function (e){
                 email: $("#emailUsuario").val(),
                 celular: $("#celularUsuario").val(),
                 direccion: $("#direccionUsuario").val(),
-                membresia: $("#membresiaUsuario").val(),
+                plan: $("#planUsuario").val(),
                 foto: $("#fotoUsuario").val(),
             },
             function (data) {
@@ -144,3 +144,4 @@ $(document).on("click","#editar_usuario_modal",function (e){
     }
     
 });
+

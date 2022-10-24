@@ -20,7 +20,7 @@
         $fecha_creacion = date("d-m-Y");
         $hora_creacion = date("H:i:s");
         $nombre_creador = $_SESSION['nombre'];
-
+        
         $datos = $formRutinas->guardarRutina($nombreRutina,$lunesRutina,$martesRutina,$miercolesRutina,$juevesRutina,$viernesRutina,$sabadoRutina,$fecha_creacion,$hora_creacion,$nombre_creador);
         
         if($datos == '1'){

@@ -8,14 +8,14 @@
         {
         }
 
-        public function consultarUsuario($usuario,$password)
+        public function consultarLogin($usuario,$password)
         {
             $sql = "SELECT * from info_login WHERE usuario = '".$usuario."' AND password = '".$password."'";
 
             return contarFilas($sql);
         }
 
-        public function extrarUsuario($usuario,$password)
+        public function extraerLogin($usuario,$password)
         {
             $sql = "SELECT * from info_login WHERE usuario = '".$usuario."' AND password = '".$password."'";
 

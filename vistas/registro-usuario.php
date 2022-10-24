@@ -38,6 +38,16 @@
     <link rel="stylesheet" href=".././assets/css/alertify.css">
     <script src=".././assets/js/alertify.js"></script>
 
+    <script type="text/javascript">
+            $(document).on("change","#fotoUsuario",function(e){
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            $('#preload-image').attr('src', URL.createObjectURL(e.target.files[0]));
+
+        });
+    </script>
+
 
 </head>
 <body class="body">
@@ -155,12 +165,12 @@
                     <div class="register__profile">
                         <h3>Foto de Perfil</h3>
 
-                        <div class="register__profile-img">
-                            <img src="" alt="">
+                        <div  class="register__profile-img">
+                            <img id="preload-image" />
                         </div>
 
                         <div class="register__profile-file">
-                            <input class="profile__btn-file" type="file" id="fotoUsuario" placeholder="Subir imagen">
+                            <input class="profile__btn-file" accept="image/" type="file" id="fotoUsuario" placeholder="Subir imagen">
                         </div>
                         
                     </div>
