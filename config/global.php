@@ -1,6 +1,6 @@
 <?php 
 //IP DEL SERVIDOR DE BASE DE DATOS
-define("DB_HOST", "mysql.proyecto-gym.com");
+define("DB_HOST", "mysql.power-gym.club");
 
 //NOMBRE DE LA BASE DE DATOS
 define("DB_NAME", "info_powergym");

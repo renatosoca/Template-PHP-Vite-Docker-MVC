@@ -1,3 +1,11 @@
+<?php
+    include_once("../config/sesion.php");
+    if($_SESSION['permiso'] == "0"){
+        header("Location: ../vistas/perfil.php");
+    }else{
+        require_once "../config/conexion.php";
+    }
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -7,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
 
-    <<!-- General Style -->
+    <!-- General Style -->
     <link rel="stylesheet" href="./src/css/general.css">
 
     <!-- Dashboard Style -->
@@ -127,10 +135,19 @@
                         </div>
 
                         <div class="register__select">
-                            <label for="">Membresía</label>
-                            <select name="" id="membresiaUsuario">
-                                <option value="Mensual">Mensual</option>
-                                <option value="Anual">Anual</option>
+                            <label for="">Plan</label>
+                            <select name="" id="planUsuario">
+                                <?php 
+                                
+                                $sql = "SELECT * FROM info_rutinas";
+                                
+                                $id_rutina = traerDatosTabla($sql);
+
+                                while($row = mysqli_fetch_array($id_rutina)){
+                                    echo "<option value='".$row["id"]."'>".$row["nombre"]."</option>";
+                                }
+
+                                ?>
                             </select>
                         </div>
                     </div>

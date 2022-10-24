@@ -1,3 +1,9 @@
+<?php
+    include_once("../config/sesion.php");
+    if($_SESSION['permiso'] == "0"){
+        header("Location: ../vistas/perfil.php");
+    }
+?>
 <!DOCTYPE php>
 <html lang="en">
 
