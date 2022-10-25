@@ -54,7 +54,7 @@
                     <td class='table__td'>".$row["email"]." </td>
                     <td class='table__td'>".$row["celular"]."</td>
                     <td class='table__td'>".$row["direccion"]."</td>
-                    <td class='table__td'>".$row["membresia"]."</td>
+                    <td class='table__td'>".$row["id_plan"]."</td>
                     <td class='table__td'>".$row["foto"]."</td>
                     <td class='table__td'>
 

@@ -151,7 +151,7 @@
                         <th class="table__th">Jueves</th>
                         <th class="table__th">Viernes</th>
                         <th class="table__th">Sabado</th>
-                        <th class="table__th"></th>
+                        <th class="table__th">Acciones</th>
                     </tr>
                 </thead>
                 <tbody class="table__body" id="table-body">

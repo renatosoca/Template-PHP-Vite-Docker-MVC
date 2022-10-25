@@ -106,8 +106,9 @@
                         <th class="table__th">Email</th>
                         <th class="table__th">Celular</th>
                         <th class="table__th">Dirección</th>
-                        <th class="table__th">Plan</th>
+                        <th class="table__th">Membresia</th>
                         <th class="table__th">Foto</th>
+                        <th class="table__th">Acciones</th>
                     </tr>
                 </thead>
                 <tbody class="table__body" id="table-body">
