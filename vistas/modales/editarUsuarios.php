@@ -5,7 +5,8 @@ require "../../config/conexion.php";
 
 $id = $_GET["id"];
 
-$sql = "SELECT * from info_clientes WHERE id = '".$id."'";
+$sql = "SELECT u.id, u.dni, u.nombre, u.email, u.celular, u.direccion, p.nombre as NombrePlan from info_usuarios u 
+        INNER JOIN info_planes p ON u.id_plan = p.id WHERE u.id = '".$id."'";
 
 $datos = consultarDatos($sql);
 
@@ -38,12 +39,12 @@ $datos = consultarDatos($sql);
                     <input type="text" id="celular_usuario_edit" value="<?php echo $datos["celular"]?>">
                 </div>
                 <div class="modal__input">
-                    <label for="">direccion:</label>
+                    <label for="">Direccion:</label>
                     <input type="text" id="direccion_usuario_edit" value="<?php echo $datos["direccion"]?>">
                 </div>
                 <div class="modal__input">
                     <label for="">Membresia:</label>
-                    <input type="text" id="membresia_usuario_edit" value="<?php echo $datos["membresia"]?>">
+                    <input type="text" id="membresia_usuario_edit" value="<?php echo $datos["NombrePlan"]?>">
                 </div>
                     <div class="modal__input">
                     <input id="editar_usuario_modal" type="submit" class="btn" value="Actualizar">

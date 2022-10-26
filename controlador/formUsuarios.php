@@ -54,8 +54,8 @@
                     <td class='table__td'>".$row["email"]." </td>
                     <td class='table__td'>".$row["celular"]."</td>
                     <td class='table__td'>".$row["direccion"]."</td>
-                    <td class='table__td'>".$row["id_plan"]."</td>
-                    <td class='table__td'>".$row["foto"]."</td>
+                    <td class='table__td'>".$row["NombrePlan"]."</td>
+                    <td class='table__td'>".$row["NombreRutina"]."</td>
                     <td class='table__td'>
 
                         <div class='table__btn'>
