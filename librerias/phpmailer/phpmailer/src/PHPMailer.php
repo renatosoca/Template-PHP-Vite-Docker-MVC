@@ -3759,7 +3759,7 @@ class PHPMailer
      *                            the content when using an embedded image in HTML
      * @param string $name        A filename for the attachment. If this contains an extension,
      *                            PHPMailer will attempt to set a MIME type for the attachment.
-     *                            For example 'file.jpg' would get an 'image/jpeg' MIME type.
+     *                            For example 'file.webp' would get an 'image/jpeg' MIME type.
      * @param string $encoding    File encoding (see $Encoding), defaults to 'base64'
      * @param string $type        MIME type - will be used in preference to any automatically derived type
      * @param string $disposition Disposition to use

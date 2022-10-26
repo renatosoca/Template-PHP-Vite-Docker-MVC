@@ -1,0 +1,77 @@
+/* Formulario contact */
+.header{
+    background: transparent;
+}
+.section__contact {
+    background: url(../images/bg-contact.webp) no-repeat center center;
+    background-size: cover;
+    padding: 0;
+}
+.contact_title{
+    color: #fff;
+    text-align: center;
+    padding: 7rem 0 2rem;
+    font-size: 3rem;
+    color: #f00;
+}
+.form_contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form_container {
+    width: 50%;
+}
+.group_inputs {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+.group_input {
+    position: relative;
+    color: #fff;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.form_input {
+    width: 100%;
+    color: #000;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.group_checkbox{
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.checkbox__text{
+    font-size: 1.5rem;
+}
+.form_capcha{
+    width: 100%;
+}
+.form_submit {
+    display: block;
+    background-color: #f00;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: .5rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/* Fin de Contacto */
+@media screen and (max-width: 770px) {
+    .form_contact {
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .form_container{
+        width: 50rem;
+        padding: 0 2rem;
+    }
+}

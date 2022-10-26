@@ -84,7 +84,7 @@ $green = array(0, 255, 0);
 $white = array(255);
 $black = array(0);
 
-// set the coordinates x1,y1,x2,y2 of the gradient (see linear_gradient_coords.jpg)
+// set the coordinates x1,y1,x2,y2 of the gradient (see linear_gradient_coords.webp)
 $coords = array(0, 0, 1, 0);
 
 // paint a linear gradient
@@ -93,7 +93,7 @@ $pdf->LinearGradient(20, 45, 80, 80, $red, $blue, $coords);
 // write label
 $pdf->Text(20, 130, 'LinearGradient()');
 
-// set the coordinates fx,fy,cx,cy,r of the gradient (see radial_gradient_coords.jpg)
+// set the coordinates fx,fy,cx,cy,r of the gradient (see radial_gradient_coords.webp)
 $coords = array(0.5, 0.5, 1, 1, 1.2);
 
 // paint a radial gradient
@@ -108,7 +108,7 @@ $pdf->CoonsPatchMesh(20, 155, 80, 80, $yellow, $blue, $green, $red);
 // write label
 $pdf->Text(20, 240, 'CoonsPatchMesh()');
 
-// set the coordinates for the cubic Bézier points x1,y1 ... x12, y12 of the patch (see coons_patch_mesh_coords.jpg)
+// set the coordinates for the cubic Bézier points x1,y1 ... x12, y12 of the patch (see coons_patch_mesh_coords.webp)
 $coords = array(
 	0.00,0.00, 0.33,0.20,             //lower left
 	0.67,0.00, 1.00,0.00, 0.80,0.33,  //lower right

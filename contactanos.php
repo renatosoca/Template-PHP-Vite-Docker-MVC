@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymPower | Contacto</title>
 
-    <link rel="preload" href="./assets/images/icon.png" as="image">
-
-    <!-- font awesome cdn link  -->
+    <!-- FONT AWESOME  -->
     <script src="https://kit.fontawesome.com/5cbce06bb4.js" crossorigin="anonymous"></script>
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/General.css">
+    <link rel="stylesheet" href="./assets/css/Contact.css">
 
     <!-- AJAX -->
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
@@ -27,74 +26,68 @@
     <!-- CAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Logo -->
+    <!-- LOGO -->
     <link rel="icon" href="./assets/images/icon.png">
 
 </head>
 
 <body>
 
-	<!-- header section starts      -->
+	<!-- HEADER SECTION -->
 	<?php include './vistas/Templates-users/header-user.php'  ?>
-	<!-- header section ends     -->
+	<!-- HEADER SECTION END -->
 
+    <!-- CONTACT SECTION  -->
+    <main class="section__contact" id="contact">
+        <div class="container">
+            <h1 class="contact_title">Contáctanos</h1>
+            <form class="form_contact" id="formulario_contacto">
+                <div class="form_container">
+                        <div class="group_inputs">
+                            <input type="text" id="nombre_contacto" class="form_input" placeholder="Ingrese su Nombre" required>
+                            <input type="text" id="nombre_contacto" class="form_input" placeholder="Ingrese su Apellido" required>
+                        </div>
 
-    <!-- Contact section starts  -->
-    <br>
-    <div class="section__contact" id="contact">
-        <h1 class="heading"><span> Contactanos </span></h1>
+                        <div class="group_input">
+                            <input type="email" id="email_contacto" class="form_input" placeholder="Ingrese su Email" required>
+                        </div>
 
-        <form class="container form_c" id="formulario_contacto">
-            <div class="form_container">
-                <div class="image_c">
-                    <img src="./assets/images/contact.jpg" alt="imagen de contacto">
+                        <div class="group_input">
+                            <input type="text" id="cel_contacto" class="form_input" placeholder="Ingrese su Celular" required>
+                        </div>
+
+                        <div class="group_input">
+                            <textarea type="text" name="" id="mensaje_contacto" cols="30" rows="6" class="form_input" placeholder="Ingrese su mensaje" required></textarea>
+                        </div>
+
+                        <div class="group_checkbox">
+                            <input type="checkbox" name="terminos_contacto" id="terminos_contacto" value="1" class="checkbox__input" required>    
+                            <span class="checkbox__text">Acepto los terminos y condiciones.</span>
+                        </div>
+
+                        <div class="group_checkbox">
+                            <input type="checkbox" id="envio_correo" class="checkbox__input">    
+                            <span class="checkbox__text">Enviar una copia del mensaje a mi correo.</span>
+                        </div>
+
+                        <div class="form_capcha">
+                            <div class="g-recaptcha" data-sitekey="6Lc1Q04iAAAAAF_SehvuxQjSqCNnaSSqQEn5XMpE"></div>
+                        </div>
+
+                        <input type="submit" id="enviar_contacto" class="btn form_submit" value="Enviar">
                 </div>
+            </form>
+        </div>
+    </main>
+    <!-- CONTACT SECTION END -->
 
-                <div class="contact__content">
-                    <div class="form_group">
-                        <input type="text" id="nombre_contacto" class="form_input" placeholder="Ingrese su Nombre" required>
-                    </div>
+    <!-- FOOTER SECTION-->
+    <?php include './vistas/Templates-users/footer-user.php'  ?>
+    <!-- FOOTER SECTION END -->
 
-                    <div class="form_group">
-                        <input type="email" id="email_contacto" class="form_input" placeholder="Ingrese su Email" required>
-                    </div>
+    <script src="vistas/js/formContacto.js"></script>
 
-                    <div class="form_group">
-                        <input type="text" id="cel_contacto" class="form_input" placeholder="Ingrese su Celular" required>
-                    </div>
-
-                    <div class="form_group">
-                        <textarea type="text" name="" id="mensaje_contacto" cols="30" rows="3" class="form_input" placeholder="Ingrese su mensaje" required></textarea>
-                    </div>
-                    <div class="form_checkbox">
-                        <input type="checkbox" name="terminos_contacto" id="terminos_contacto" value="1" class="checkbox__input" required>    
-                        <span class="checkbox__text">Acepto los terminos y condiciones.</span>
-                    </div>
-                    <div class="form_checkbox">
-                        <input type="checkbox" id="envio_correo" class="checkbox__input">    
-                        <span class="checkbox__text">Enviar una copia del mensaje a mi correo.</span>
-                    </div>
-		    <div class="form_group">
-                        <div class="g-recaptcha" data-sitekey="6Lc1Q04iAAAAAF_SehvuxQjSqCNnaSSqQEn5XMpE"></div>
-                    </div>
-
-                </div>
-            </div>
-            <input type="submit" id="enviar_contacto" class="btn form_submit_c" value="Enviar">
-        </form>
-    </div>
-
-    <!-- Contact section end  -->
-
-<!-- header section starts      -->
-<?php include './vistas/Templates-users/footer-user.php'  ?>
-<!-- header section ends     -->
-
-
-<script src="vistas/js/formContacto.js"></script>
-
-    <!-- custom js file link  -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/Nav.js"></script>
 
 </body>
 

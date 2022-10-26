@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymPower | Login</title>
 
-    <!-- Font Awesome -->
+    <!-- FONT AWESOME-->
     <script src="https://kit.fontawesome.com/493971e1cb.js" crossorigin="anonymous"></script>
 
-    <!-- custom css file link  -->
+    <!-- CSS  -->
     <link rel="stylesheet" href="./assets/css/Login.css">
 
     <!-- sWIPER -->
@@ -33,7 +33,7 @@
 </head>
 <body>
 
-    <div class="body-container">
+    <main class="body-container">
         <div class="body-white">
             <div class="container form-container">
                 <h1>GYMPOWER</h1>
@@ -74,27 +74,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".swiperLoop", {
-        cssMode: true,
-        spaceBetween: 0,
-        loop:true,
-        centeredSlides: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        });
-    </script>
+    <!-- Config Swiper -->
+    <script src="./assets/js/Login.js"></script>
 
-
+    <!-- Acciones Login -->
     <script src="vistas/js/formLogin.js"></script>
-
 </body>
 </html>

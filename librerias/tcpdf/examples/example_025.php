@@ -103,7 +103,7 @@ $pdf->SetDrawColor(0, 0, 127);
 $pdf->Rect(70, 80, 60, 60, 'DF');
 
 // draw jpeg image
-$pdf->Image('images/image_demo.jpg', 90, 100, 60, 60, '', 'http://www.tcpdf.org', '', true, 72);
+$pdf->Image('images/image_demo.webp', 90, 100, 60, 60, '', 'http://www.tcpdf.org', '', true, 72);
 
 // restore full opacity
 $pdf->SetAlpha(1);

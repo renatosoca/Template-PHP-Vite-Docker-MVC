@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+html::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+/* Estilos Generales */
+body {
+  background: #000;
+}
+section {
+  padding: 5rem 9%;
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Estilos Reutilizables */
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: .1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+.heading span {
+  font-size: 3rem;
+  color: #f00;
+  background: #000;
+  padding: .5rem 1.5rem;
+  border: 0.1rem solid #aaa;
+  border-radius: .5rem;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: transform .4s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/* Cabezera */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  z-index: 10000;
+  background: #000;
+}
+.header .logo {
+  font-weight: bold;
+  color: #f00;
+  font-size: 3rem;
+}
+.header .logo span {
+  color: #fff;
+}
+/* Navegación */
+.header .navbar a {
+  display: inline-block;
+  padding: .8rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  transition: color .4s ease;
+}
+.header .navbar a:hover {
+  color: #f00;
+}
+/* Icono Menú */
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+/* Icono Ingresar */
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.icon-login{
+  color: #fff;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  transition: color .4s ease;
+}
+.icon-login:hover{
+  color: #f00;
+}
+.fa-right-to-bracket{
+  font-size: 2.5rem;
+}
+.icons span{
+  width: 0%;
+}
+
+
+/* Seccion Footer */
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .links {
+  font-size: 1.5rem;
+  display: block;
+  color: #aaa;
+  padding: 1rem 0;
+  transition: color .4s ease;
+}
+.footer .links:hover {
+  color: #f00;
+}
+.footer .box p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+.footer .box p i {
+  padding-right: .5rem;
+  color: #f00;
+}
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #111;
+  border-radius: 50%;
+  margin-right: .5rem;
+  text-align: center;
+}
+.footer .share a:hover {
+  background: #f00;
+}
+.footer .email {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #111;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+/* Copyright */
+.credit {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  background: #111;
+  line-height: 1.5;
+}
+.credit span {
+  color: #f00;
+}
+
+
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    transition: transform .4s ease;
+  }
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

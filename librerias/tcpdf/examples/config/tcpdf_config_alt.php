@@ -69,7 +69,7 @@ define ('K_PATH_IMAGES', dirname(__FILE__).'/../assets/images/');
  * Deafult image logo used be the default Header() method.
  * Please set here your own logo or an empty string to disable it.
  */
-define ('PDF_HEADER_LOGO', 'tcpdf_logo.jpg');
+define ('PDF_HEADER_LOGO', 'tcpdf_logo.webp');
 
 /**
  * Header logo image width in user units.

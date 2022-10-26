@@ -97,7 +97,7 @@ $pdf->StartTransform();
 $pdf->StarPolygon(30, 30, 29, 10, 3, 0, 1, 'CNZ');
 
 // draw jpeg image to be clipped
-$pdf->Image('images/image_demo.jpg', 0, 0, 60, 60, '', '', '', true, 72, '', false, false, 0, false, false, false);
+$pdf->Image('images/image_demo.webp', 0, 0, 60, 60, '', '', '', true, 72, '', false, false, 0, false, false, false);
 
 //Stop Graphic Transformation
 $pdf->StopTransform();

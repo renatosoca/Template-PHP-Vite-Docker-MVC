@@ -94,25 +94,25 @@ $pdf->Write(0, 'Neither fill nor stroke text (invisible)', '', 0, '', true, 0, f
 $pdf->StartTransform();
 $pdf->setTextRenderingMode($stroke=0, $fill=true, $clip=true);
 $pdf->Write(0, 'Fill text and add to path for clipping', '', 0, '', true, 0, false, false, 0);
-$pdf->Image('images/image_demo.jpg', 15, 65, 170, 10, '', '', '', true, 72);
+$pdf->Image('images/image_demo.webp', 15, 65, 170, 10, '', '', '', true, 72);
 $pdf->StopTransform();
 
 $pdf->StartTransform();
 $pdf->setTextRenderingMode($stroke=0.3, $fill=false, $clip=true);
 $pdf->Write(0, 'Stroke text and add to path for clipping', '', 0, '', true, 0, false, false, 0);
-$pdf->Image('images/image_demo.jpg', 15, 75, 170, 10, '', '', '', true, 72);
+$pdf->Image('images/image_demo.webp', 15, 75, 170, 10, '', '', '', true, 72);
 $pdf->StopTransform();
 
 $pdf->StartTransform();
 $pdf->setTextRenderingMode($stroke=0.3, $fill=true, $clip=true);
 $pdf->Write(0, 'Fill, then stroke text and add to path for clipping', '', 0, '', true, 0, false, false, 0);
-$pdf->Image('images/image_demo.jpg', 15, 85, 170, 10, '', '', '', true, 72);
+$pdf->Image('images/image_demo.webp', 15, 85, 170, 10, '', '', '', true, 72);
 $pdf->StopTransform();
 
 $pdf->StartTransform();
 $pdf->setTextRenderingMode($stroke=0, $fill=false, $clip=true);
 $pdf->Write(0, 'Add text to path for clipping', '', 0, '', true, 0, false, false, 0);
-$pdf->Image('images/image_demo.jpg', 15, 95, 170, 10, '', '', '', true, 72);
+$pdf->Image('images/image_demo.webp', 15, 95, 170, 10, '', '', '', true, 72);
 $pdf->StopTransform();
 
 // reset text rendering mode

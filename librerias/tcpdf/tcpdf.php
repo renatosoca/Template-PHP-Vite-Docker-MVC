@@ -6869,7 +6869,7 @@ class TCPDF {
 	 * The format can be specified explicitly or inferred from the file extension.<br />
 	 * It is possible to put a link on the image.<br />
 	 * Remark: if an image is used several times, only one copy will be embedded in the file.<br />
-	 * @param string $file Name of the file containing the image or a '@' character followed by the image data string. To link an image without embedding it on the document, set an asterisk character before the URL (i.e.: '*http://www.example.com/image.jpg').
+	 * @param string $file Name of the file containing the image or a '@' character followed by the image data string. To link an image without embedding it on the document, set an asterisk character before the URL (i.e.: '*http://www.example.com/image.webp').
 	 * @param float $x Abscissa of the upper-left corner (LTR) or upper-right corner (RTL).
 	 * @param float $y Ordinate of the upper-left corner (LTR) or upper-right corner (RTL).
 	 * @param float $w Width of the image in the page. If not specified or equal to zero, it is automatically calculated.
@@ -14400,7 +14400,7 @@ class TCPDF {
 	 * @param float $h height of the rectangle.
 	 * @param array $col1 first color (Grayscale, RGB or CMYK components).
 	 * @param array $col2 second color (Grayscale, RGB or CMYK components).
-	 * @param array $coords array of the form (x1, y1, x2, y2) which defines the gradient vector (see linear_gradient_coords.jpg). The default value is from left to right (x1=0, y1=0, x2=1, y2=0).
+	 * @param array $coords array of the form (x1, y1, x2, y2) which defines the gradient vector (see linear_gradient_coords.webp). The default value is from left to right (x1=0, y1=0, x2=1, y2=0).
 	 * @author Andreas W\FCrmser, Nicola Asuni
 	 * @since 3.1.000 (2008-06-09)
 	 * @public
@@ -14418,7 +14418,7 @@ class TCPDF {
 	 * @param float $h height of the rectangle.
 	 * @param array $col1 first color (Grayscale, RGB or CMYK components).
 	 * @param array $col2 second color (Grayscale, RGB or CMYK components).
-	 * @param array $coords array of the form (fx, fy, cx, cy, r) where (fx, fy) is the starting point of the gradient with color1, (cx, cy) is the center of the circle with color2, and r is the radius of the circle (see radial_gradient_coords.jpg). (fx, fy) should be inside the circle, otherwise some areas will not be defined.
+	 * @param array $coords array of the form (fx, fy, cx, cy, r) where (fx, fy) is the starting point of the gradient with color1, (cx, cy) is the center of the circle with color2, and r is the radius of the circle (see radial_gradient_coords.webp). (fx, fy) should be inside the circle, otherwise some areas will not be defined.
 	 * @author Andreas W\FCrmser, Nicola Asuni
 	 * @since 3.1.000 (2008-06-09)
 	 * @public
