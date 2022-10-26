@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymPower | Login</title>
 
-    <link rel="preload" href="./assets/images/icon.png" as="image">
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/493971e1cb.js" crossorigin="anonymous"></script>
 
@@ -63,14 +61,14 @@
                         <div class="swiper-slide">
                             <small>#Fitness</small>
                             <h4>DEBERIAS SER ADICTO</h4>
-                            <h3>SUPERARTE</h3>
+                            <h3>A SUPERARTE</h3>
                             <h2>A TÍ MISMO</h2>
                         </div>
                         <div class="swiper-slide">
                             <small>#Fitness</small>
-                            <h4>DEBERIAS SER ADICTO</h4>
-                            <h3>SUPERARTE</h3>
-                            <h2>A TÍ MISMO</h2>
+                            <h4>Si entrenas Duro,</h4>
+                            <h3>No solo serás duro,</h3>
+                            <h2>Serás duro de Superar</h2>
                         </div>
                     </div>
                 </div>
@@ -78,28 +76,25 @@
         </div>
     </div>
     
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".swiperLoop", {
-      spaceBetween: 0,
-      loop:true,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-    });
-</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiperLoop", {
+        cssMode: true,
+        spaceBetween: 0,
+        loop:true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        });
+    </script>
 
-<script src="vistas/js/formLogin.js"></script>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="./assets/js/script.js"></script>
+    <script src="vistas/js/formLogin.js"></script>
 
 </body>
 </html>

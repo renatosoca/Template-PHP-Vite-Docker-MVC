@@ -23,7 +23,7 @@ body{
 
 .container{
     max-width: 50rem;
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
 }
 .btn{
@@ -34,6 +34,10 @@ body{
     padding: 1.4rem 1.2rem;
     font-size: 1.7rem;
     border-radius: .4rem;
+    transition: transform .4s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
 }
 
 .body-container{
@@ -49,6 +53,7 @@ body{
     display: block;
     margin: auto;
     width: 100%;
+    padding: 0 3rem;
 }
 .form-container h1{
     font-family: var(--font-primary);
@@ -82,13 +87,14 @@ body{
 .swiper {
     width: 100%;
     height: 100%;
+    padding: 0 3rem;
 }
 .swiper-slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 4rem;
-    padding-left: 10rem;
+    padding: 0 3rem 0 10rem;
     color: #fff;
 }
 .swiper-slide small{
@@ -96,4 +102,20 @@ body{
     background: #96885F;
     width: max-content;
     font-style: italic;
+}
+
+
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    html{
+        font-size: 50%;
+    }
+    .body-dark{
+        display: none;
+    }
 }
