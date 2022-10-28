@@ -6,6 +6,7 @@
     margin: 0;
     border: 0;
     list-style: none;
+    outline: none;
 }
 
 :root{
@@ -107,7 +108,9 @@ h1,h2,h3,h4{
     display: flex;
     height: 100%;
     position: relative;
+    background-color: #dddcdc;
 }
+
 
 /* Inicio Estilos del ASIDE IZQUIERDO */
 .nav__left{
@@ -115,58 +118,93 @@ h1,h2,h3,h4{
     flex-direction: column;
 }
 .nav__container{
-    background: var(--ligth-blue);
-    width: 20rem;
+    background: #5344F5;
+    width: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex: 1;
+    box-shadow: 8px 0px 8px 0px rgba(109,106,212,0.63);
+    transition: width .4s ease-in-out;
 }
-
+.nav__container.active{
+    width: 25rem;
+}
 /* Seccion del HEADER */
 .header{
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 3rem;
+    overflow: hidden;
+}
+.header__menu{
+    font-size: 3rem;
+    color: var(--white);
+    cursor: pointer;
 }
 .header__logo{
     color: var(--white);
     font-size: 2.5rem;
     text-align: center;
-    margin: 2rem 0;
+    font-style: italic;
+    opacity: 0;
+    transition: opacity .6s ease-out;
 }
-.header__close{
-    display: none;
+.nav__container.active .header__logo{
+    opacity: 1;
 }
 /* Seccion del NAVEGADOR*/
 .nav__menu{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
+    transition: padding-left .4s ease-in-out;
+}
+.nav__container.active .nav__menu{
+    padding-left: 5rem;
 }
 .nav__links{
+    position: relative;
     display: flex;
     gap: 2rem;
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 1rem 2rem;
     color: var(--white);
     background: transparent;
-    border-radius: 2rem 0 0 2rem;
-    opacity: .7;
+    transition: background .4s ease-in-out;
 }
 .nav__links:hover{
-    background: var(--black-variant);
+    background: rgba(255, 255, 255, 0.3);
+}
+.nav__links::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .5rem;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+.nav__links:hover::before{
     opacity: 1;
-    transition: all .4s ease;
-    color: var(--white);
 }
 .nav__icon{
-    font-size: 2.5rem;
-    min-width: 3rem;
+    font-size: 3rem;
+    min-width: 3.5rem;
 }
 .nav__links-text{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     padding-top: .7rem;
+    opacity: 0;
+    transition: opacity .6s .2s;
+}
+.nav__container.active .nav__links-text{
+    opacity: 1;
 }
 /* Fin Estilos del ASIDE IZQUIERDO */
 
@@ -441,26 +479,6 @@ h1,h2,h3,h4{
 @media screen and (max-width:1200px){
     html{
         font-size: 50%;
-    }
-    .nav__left{
-        position: fixed;
-        width: 18rem;
-        z-index: 10;
-        height: 100vh;
-        left: -20rem;
-        transition: all .5s ease;
-    }
-    .nav__container{
-        border-bottom-right-radius: 4rem;
-    }
-
-    .header__close{
-        display: block;
-        position: absolute;
-        top: -4rem;
-        right: 1rem;
-        font-size: 3rem;
-        color: var(--white);
     }
 
     .profile__details{

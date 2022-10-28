@@ -14,10 +14,10 @@
     <title>Usuarios</title>
 
     <!-- General Style -->
-    <link rel="stylesheet" href="./src/css/general.css">
+    <link rel="stylesheet" href="../assets/css/Admin_General.css">
 
     <!-- Dashboard Style -->
-    <link rel="stylesheet" href="./src/css/usuario.css">
+    <link rel="stylesheet" href="../assets/css/Admin_Usuarios.css">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -40,59 +40,13 @@
 </head>
 <body class="body">
 
-    <aside class="nav__left" id="aside-nav">
-        <div class="nav__container">
-            <header class="header">
-                <h1 class="header__logo">POWER-GYM</h1>
-                <span class="header__close"><i id="close-nav" class="fa-solid fa-circle-xmark"></i></span>
-            </header>
-
-            <nav class="nav__menu">
-                <a href="dashboard.php" class="nav__links">
-                    <i class="fa-solid fa-chart-line nav__icon"></i>
-                    <span class="nav__links-text">Dashboard</span>
-                </a>
-
-                <a href="planes.php" class="nav__links">
-                    <i class="fa-solid fa-sheet-plastic nav__icon"></i>
-                    <span class="nav__links-text">Planes</span>
-                </a>
-
-                <a href="rutinas.php" class="nav__links">
-                    <i class="fa-solid fa-route nav__icon"></i>
-                    <span class="nav__links-text">Rutinas</span>
-                </a>
-
-                <a href="usuarios.php" class="nav__links">
-                    <i class="fa-solid fa-users nav__icon"></i>
-                    <span class="nav__links-text">Usuarios</span>
-                </a>
-
-                <a href="perfil.php" class="nav__links">
-                    <i class="fa-solid fa-address-card nav__icon"></i>
-                    <span class="nav__links-text">Perfil</span>
-                </a>
-            </nav>
-
-            <form class="nav__menu" action="">
-                <button type="submit" class="nav__links">
-                    <i class="fa-sharp fa-solid fa-circle-left nav__icon"></i>
-                    <span class="nav__links-text">Salir</span>
-                </button>
-            </form>
-
-        </div>
-    </aside>
-
+    <?php include './Templates-admin/Nav.php' ?>
 
     <main class="main__container">
-        <div id="btn-nav" class="main__btn btn">
-            <i class="fa-solid fa-bars"></i>
-            <span> Menú</span>
-        </div>
+        <h2 class="text-center">Usuarios</h2>
 
-        <div class="main__title">
-            <h2 class="text-center">Usuarios</h2>
+        <div class="register__users">
+            <a href="registro-usuario.php" class="btn">Registrar Usuario</a>
         </div>
 
         <div class="main__table">
@@ -116,17 +70,13 @@
 
                 </tbody>
             </table>
-
         </div>
-
-        <div class="register__users">
-            <a href="registro-usuario.php" class="btn">Registrar Usuario</a>
-        </div>
-
     </main>
-    <section class="modal" id="modalEditar">
-    </section>
-    <script src="src/js/admin.js"></script>
+
+    <section class="modal" id="modalEditar"></section>
+
+
+    <script src="../assets/js/Index_Admin.js"></script>
     <script src="js/formUsuarios.js"></script>
 </body>
 
