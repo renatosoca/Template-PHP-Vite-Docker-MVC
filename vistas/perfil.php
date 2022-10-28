@@ -40,7 +40,7 @@ include_once("../config/sesion.php");
     <?php include './Templates-admin/Nav.php' ?>
 
     <div class="main__container">
-        <h1 class="text-center">Mi Perfil</h1>
+        <h1 class="main__title">Mi Perfil</h1>
 
         <div class="profile">
             <div class="profile__details">

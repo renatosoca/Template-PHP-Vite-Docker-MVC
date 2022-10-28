@@ -5,7 +5,7 @@
     }
 ?>
 <!DOCTYPE php>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -42,14 +42,14 @@
 
     <?php include './Templates-admin/Nav.php' ?>
 
-    <main class="main__container">
-        <h2 class="text-center">Usuarios</h2>
+    <div class="main__container">
+        <h2 class="main__title">Usuarios</h2>
 
-        <div class="register__users">
-            <a href="registro-usuario.php" class="btn">Registrar Usuario</a>
+        <div class="main__new">
+            <a href="registro-usuario.php" class="btn">Nuevo Usuario</a>
         </div>
 
-        <div class="main__table">
+        <main class="main__table">
             <h3 class="main__subtitle">Lista de Usuarios</h3>
 
             <table class="table">
@@ -70,8 +70,8 @@
 
                 </tbody>
             </table>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <section class="modal" id="modalEditar"></section>
 

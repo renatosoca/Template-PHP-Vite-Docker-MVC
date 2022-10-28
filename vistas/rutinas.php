@@ -43,9 +43,9 @@
     <?php include './Templates-admin/Nav.php' ?>
 
     <div class="main__container">
-        <h2 class="text-center">Rutinas</h2>
+        <h2 class="main__title">Rutinas</h2>
 
-        <div class="register__users">
+        <div class="main__new">
             <a href="registro-usuario.php" class="btn">Nueva Rutina</a>
         </div>
 

@@ -5,7 +5,7 @@
     }
 ?>
 <!DOCTYPE php>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -43,9 +43,9 @@
     <?php include './Templates-admin/Nav.php' ?>
 
     <div class="main__container">
-        <h2 class="text-center">Planes</h2>
+        <h1 class="main__title">Planes</h1>
 
-        <div class="register__users">
+        <div class="main__new">
             <a href="registro-usuario.php" class="btn">Registrar Plan</a>
         </div>
 

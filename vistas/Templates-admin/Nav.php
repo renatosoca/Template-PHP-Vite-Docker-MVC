@@ -9,27 +9,37 @@
 
             <nav class="nav__menu">
                 <a href="dashboard.php" class="nav__links">
-                    <i class="fa-solid fa-chart-line nav__icon"></i>
+                    <div class="nav__icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
                     <span class="nav__links-text">Dashboard</span>
                 </a>
 
                 <a href="planes.php" class="nav__links">
-                    <i class="fa-solid fa-sheet-plastic nav__icon"></i>
+                    <div class="nav__icon">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                    </div>
                     <span class="nav__links-text">Planes</span>
                 </a>
 
                 <a href="rutinas.php" class="nav__links">
-                    <i class="fa-solid fa-route nav__icon"></i>
+                    <div class="nav__icon">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
                     <span class="nav__links-text">Rutinas</span>
                 </a>
 
                 <a href="usuarios.php" class="nav__links">
-                    <i class="fa-solid fa-users nav__icon"></i>
+                    <div class="nav__icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
                     <span class="nav__links-text">Usuarios</span>
                 </a>
 
                 <a href="perfil.php" class="nav__links">
-                    <i class="fa-solid fa-address-card nav__icon"></i>
+                    <div class="nav__icon">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
                     <span class="nav__links-text">Perfil</span>
                 </a>
             </nav>

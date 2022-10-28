@@ -12,11 +12,11 @@
 :root{
     --white: #fff;
     --black: #000;
-    --ligth-blue: #F08342;
-    --dark-blue: #F09144;
-    --black-variant: #181818;
-    --ligth-grey: #dddcdc;
-    --ligth-grey-variant: #afa8a8;
+    
+    --bg-principal: #fff;
+    --bg-secundary: #212133;
+    --bg-nav: #10111A;
+    --bg-title-table: #000;
 
     --font-primary: 'Anton', sans-serif;
     --font-secundary: 'Kanit', sans-serif;
@@ -66,15 +66,19 @@ h1,h2,h3,h4{
 .btn{
     all: unset;
     width: max-content;
-    background: var(--dark-blue);
+    background: var(--bg-nav);
     color: var(--white);
     padding: 1rem 2rem;
     display: block;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     font-size: 1.7rem;
     cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 .btn__asigne{
     color: green;
@@ -108,7 +112,6 @@ h1,h2,h3,h4{
     display: flex;
     height: 100%;
     position: relative;
-    background-color: #dddcdc;
 }
 
 
@@ -118,17 +121,18 @@ h1,h2,h3,h4{
     flex-direction: column;
 }
 .nav__container{
-    background: #5344F5;
-    width: 8rem;
+    background: var(--bg-nav);
+    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex: 1;
     box-shadow: 8px 0px 8px 0px rgba(109,106,212,0.63);
+    z-index: 1;
     transition: width .4s ease-in-out;
 }
 .nav__container.active{
-    width: 25rem;
+    width: 8rem;
 }
 /* Seccion del HEADER */
 .header{
@@ -148,22 +152,22 @@ h1,h2,h3,h4{
     font-size: 2.5rem;
     text-align: center;
     font-style: italic;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .6s ease-out;
 }
 .nav__container.active .header__logo{
-    opacity: 1;
+    opacity: 0;
 }
 /* Seccion del NAVEGADOR*/
 .nav__menu{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-left: 1rem;
+    padding-left: 5rem;
     transition: padding-left .4s ease-in-out;
 }
 .nav__container.active .nav__menu{
-    padding-left: 5rem;
+    padding-left: 1rem;
 }
 .nav__links{
     position: relative;
@@ -184,7 +188,7 @@ h1,h2,h3,h4{
     left: 0;
     width: .5rem;
     height: 100%;
-    background: #000;
+    background: rgba(109,106,212,1);
     opacity: 0;
     transition: opacity .6s ease-in-out;
 }
@@ -192,7 +196,9 @@ h1,h2,h3,h4{
     opacity: 1;
 }
 .nav__icon{
-    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
     min-width: 3.5rem;
 }
 .nav__links-text{
@@ -200,11 +206,11 @@ h1,h2,h3,h4{
     text-transform: uppercase;
     font-weight: bold;
     padding-top: .7rem;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .6s .2s;
 }
 .nav__container.active .nav__links-text{
-    opacity: 1;
+    opacity: 0;
 }
 /* Fin Estilos del ASIDE IZQUIERDO */
 
@@ -214,20 +220,9 @@ h1,h2,h3,h4{
 .main__container{
     padding: 2rem 4rem;
     flex: 1;
-    font-size: 2rem;
     overflow-y: scroll;
+    background-image: linear-gradient(135deg,var(--bg-principal) 0%, var(--bg-principal) 50%, var(--bg-secundary) 50%, var(--bg-secundary) 100%);
 }
-
-
-/* Boton para activar NAVEGADOR */
-.main__btns{
-    display: flex;
-    justify-content: space-between;
-}
-.main__btns .btn{
-    margin-left: 0;
-}
-
 
 /* Estilos Generales del contenido Principal */
 .main__title{
@@ -235,15 +230,23 @@ h1,h2,h3,h4{
     font-weight: bold;
     font-size: 2.3rem;
     margin-bottom: 3rem;
+    font-size: 3.5rem;
 }
+/* BOTON NUEVO REGISTRO */
+.main__new{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+.main__new .btn{
+    box-shadow: 0px 0px 4px 5px rgba(109,106,212,.4);
+}
+
 .main__subtitle{
     width: max-content;
-    border-bottom: solid .25rem var(--dark-blue);
+    border-bottom: solid .25rem var(--bg-nav);
     margin-bottom: 2rem;
-}
-.main__create{
-    margin: 0 auto;
-    max-width: 100%;
+    font-size: 2.5rem;
 }
 
 
@@ -251,6 +254,7 @@ h1,h2,h3,h4{
 .table{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+    background: var(--white);
     border-radius: 1rem;
     padding: 1rem;
     border-spacing: 0;
@@ -258,7 +262,7 @@ h1,h2,h3,h4{
     font-size: 1.5rem;
 }
 .table__head{
-    background: var(--black-variant);
+    background: var(--bg-title-table);
     color: var(--white);
 }
 /* Titulos de las TABLAS */
@@ -281,6 +285,9 @@ h1,h2,h3,h4{
     background: var(--ligth-grey-variant);
 }
 /* Fin estilos para las TABLAS */
+
+
+
 
 
 
@@ -479,6 +486,31 @@ h1,h2,h3,h4{
 @media screen and (max-width:1200px){
     html{
         font-size: 50%;
+    }
+
+    .nav__container{
+        width: 8rem;
+    }
+    .nav__container.active{
+        width: 25rem;
+    }
+    .header__logo{
+        opacity: 0;
+    }
+    .nav__container.active .header__logo{
+        opacity: 1;
+    }
+    .nav__menu{
+        padding-left: 1rem;
+    }
+    .nav__container.active .nav__menu{
+        padding-left: 5rem;
+    }
+    .nav__links-text{
+        opacity: 0;
+    }
+    .nav__container.active .nav__links-text{
+        opacity: 1;
     }
 
     .profile__details{

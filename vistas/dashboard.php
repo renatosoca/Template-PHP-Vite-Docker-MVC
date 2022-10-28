@@ -33,7 +33,7 @@
     <?php include './Templates-admin/Nav.php' ?>
 
     <div class="main__container">
-        <h2 class="text-center">Resumen</h2>
+        <h2 class="main__title">Resumen</h2>
 
 	    <main class="dbd__container">
             <div class="dbd__box">
