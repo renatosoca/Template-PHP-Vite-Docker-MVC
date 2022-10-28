@@ -287,142 +287,6 @@ h1,h2,h3,h4{
 /* Fin estilos para las TABLAS */
 
 
-
-
-
-
-/* Crear PLANES */
-.plans__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
-    gap: 1rem;
-}
-.plans__inputs{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin: 0 auto;
-}
-.btn-plan{
-    margin: 2rem auto 5rem auto;
-}
-/* Fin de Crear PLANES */
-
-
-
-/* Crear RUTINAS */
-.routines__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap: 2rem;
-}
-.routines__inputs{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin-right: 0 auto;
-}
-.btn-routine{
-    margin: 2rem auto 5rem auto;
-}
-
-/* Fin de Crear RUTINAS */
-
-
-
-/* Tabla de USUARIOS */
-.btn__flex.icon{
-    display: flex;
-    align-items: center;
-    gap: .7rem;
-}
-.text__asigned{
-    font-size: 1.5rem;
-    color: green;
-}
-/* Fin TABLA de USUARIOS */
-
-
-/* Para el REGISTRO USUARIOS */
-.main__register{
-    border: solid .2rem black;
-}
-.register__form{
-    width: 100%;
-}
-.register__container{
-    display: flex;
-    width: 100%;
-    gap: 4rem;
-}
-
-.register__info{
-    padding: 4rem 2rem 0 2rem;
-    flex: 1;
-}
-.register__input{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-}
-.register__input input{
-    width: 100%;
-}
-
-.register__inputs{
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-}
-.register__inputs input{
-    width: 100%;
-}
-.register__email,
-.register__phone{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.register__select{
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-}
-.register__select select{
-    
-    border: solid .15rem black;
-    padding: 1rem;
-}
-
-.register__profile{
-    flex: 1;
-    padding-top: 2rem;
-}
-.register__profile-img{
-    width: 30rem;
-    background: #000;
-    height: 33rem;
-    margin-bottom: 2rem;
-    border: .15rem dashed var(--ligth-grey-variant);
-}
-.profile__btn-file{
-    border: none;
-    padding-left: 0;
-}
-
-.register__btn{
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
-}
-/* Fin de REGISTRO USUARIOs */
-
-
-
-
 /* Modales */
 .modal{
     position: fixed;
@@ -512,32 +376,10 @@ h1,h2,h3,h4{
     .nav__container.active .nav__links-text{
         opacity: 1;
     }
-
-    .profile__details{
-        grid-template-columns: 1fr;
-    }
-    .profile__view{
-        margin: 0;
-    }
 }
 
 @media screen and (max-width:650px){
     html{
         font-size: 40%;
-    }
-    
-    .register__profile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .register__container{
-        flex-direction: column;
-    }
-
-    .profile__view{
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
     }
 }
