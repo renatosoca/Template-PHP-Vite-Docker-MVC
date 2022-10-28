@@ -3,7 +3,7 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box footer-box">
             <h3>Links Rapidos</h3>
             <a class="links" href="index.php#home">Inicio</a>
             <a class="links" href="index.php#about">Sobre Nosotros</a>
@@ -11,7 +11,7 @@
             <a class="links" href="./contactanos.php">Contactanos</a>
         </div>
 
-        <div class="box">
+        <div class="box footer-box">
             <h3>Horario de Atención</h3>
             <p> Lunes : <i> 7:00am - 10:30pm </i> </p>
             <p> Martes : <i> 7:00am - 10:30pm </i> </p>
@@ -21,7 +21,7 @@
             <p> Sabado : <i> cerrado </i> </p>
         </div>
 
-        <div class="box">
+        <div class="box footer-box">
             <h3>Redes Sociales</h3>
             <p> <i class="fas fa-phone"></i> 555 555 555 </p>
             <p> <i class="fas fa-phone"></i> 55 555 5555 </p>

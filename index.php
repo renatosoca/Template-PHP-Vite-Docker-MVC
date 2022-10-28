@@ -157,7 +157,7 @@
 
     <!-- PLANES -->
     <section class="pricing" id="pricing">
-        <div class="information">
+        <div class="information info-plans">
             <span>Nuestros Planes</span>
 
             <h3>Precios asequibles</h3>
@@ -389,8 +389,12 @@
     <?php include './vistas/Templates-users/footer-user.php'  ?>
     <!-- FOOTER END -->
 
-
+    
+    <!-- SWIPER -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <!-- JS -->
     <script src="./assets/js/Nav.js"></script>

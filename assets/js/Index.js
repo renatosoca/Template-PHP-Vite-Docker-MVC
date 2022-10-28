@@ -27,3 +27,16 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+
+const sr = ScrollReveal({
+    origin: "rigth",
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    reset: true,
+});
+sr.reveal(`.about, .review`)
+sr.reveal(`.features`,{origin:"left"})
+sr.reveal(`.trainers, .info-plans, .basic, .plan, .footer-box`,{origin:"bottom", interval:500})
+sr.reveal(` .home-slider`,{origin:"top"})

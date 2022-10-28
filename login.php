@@ -76,10 +76,13 @@
         </div>
     </main>
     
-    <!-- Swiper JS -->
+    <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Config Swiper -->
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- JS LOGIN -->
     <script src="./assets/js/Login.js"></script>
 
     <!-- Acciones Login -->
