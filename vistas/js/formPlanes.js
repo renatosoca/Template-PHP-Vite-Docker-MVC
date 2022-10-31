@@ -88,6 +88,27 @@ $(document).on("click","#close-modal", function(e){
     $("#editarPlanModal").removeClass("active");
 });
 
+$(document).on("click","#abrirModalAgregarPlan",function (e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    $("#agregarPlanModal").load(
+        "../vistas/modales/agregarPlan.php"
+        );
+
+    $("#agregarPlanModal").addClass("active");
+
+
+});
+
+$(document).on("click","#close-modal", function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    $("#agregarPlanModal").removeClass("active");
+});
+
+
+
 $(document).on("click","#editar_plan_modal",function (e){
     e.preventDefault();
     e.stopImmediatePropagation();

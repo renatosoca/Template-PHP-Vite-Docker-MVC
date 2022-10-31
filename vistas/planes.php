@@ -46,7 +46,7 @@
         <h1 class="main__title">Planes</h1>
 
         <div class="main__new">
-            <a href="registro-usuario.php" class="btn">Registrar Plan</a>
+            <a id="abrirModalAgregarPlan" class="btn">Registrar Plan</a>
         </div>
 
         <main class="main__table">
@@ -70,6 +70,7 @@
     </div>
 
     <section class="modal" id="editarPlanModal"></section>
+    <section class="modal" id="agregarPlanModal"></section>
 
 
     <script src="../assets/js/Index_Admin.js"></script>
