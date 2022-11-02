@@ -17,7 +17,7 @@ $datos = consultarDatos($sql);
 <div class="modal__container">
     <div class="modal__title">
         <h1 class="text__title">Modificar Perfil</h1>
-        <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
+        <i id="close_modal" class="fa-solid fa-circle-xmark"></i>
     </div>
 
     <form class="edit__form">

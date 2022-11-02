@@ -67,8 +67,6 @@ $(document).on("click",".bottom-delete",function (e){
 
 });
 
-
-
 $(document).on("click",".bottom-edit",function (e){
     e.preventDefault();
     e.stopImmediatePropagation();
@@ -98,10 +96,9 @@ $(document).on("click","#abrirModalAgregarPlan",function (e){
 
     $("#agregarPlanModal").addClass("active");
 
-
 });
 
-$(document).on("click","#close-modal", function(e){
+$(document).on("click","#close_modal", function(e){
     e.preventDefault();
     e.stopImmediatePropagation();
     $("#agregarPlanModal").removeClass("active");

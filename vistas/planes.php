@@ -72,6 +72,9 @@
     <section class="modal" id="editarPlanModal"></section>
     <section class="modal" id="agregarPlanModal"></section>
 
+    
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <script src="../assets/js/Index_Admin.js"></script>
     <script src="js/formPlanes.js"></script>

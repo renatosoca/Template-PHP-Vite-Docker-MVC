@@ -13,3 +13,13 @@ function MostrarNav(e){
     navbar.classList.toggle('active')
     console.log(navbar)
 };
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: '60px',
+    duration: 2500,
+    delay: 700,
+    reset: true,
+});
+
+sr.reveal(`.table`);

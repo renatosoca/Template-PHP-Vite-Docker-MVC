@@ -46,7 +46,7 @@
         <h2 class="main__title">Usuarios</h2>
 
         <div class="main__new">
-            <a href="registro-usuario.php" class="btn">Nuevo Usuario</a>
+            <a id="abrirModalAgregarUsuario" class="btn">Nuevo Usuario</a>
         </div>
 
         <main class="main__table">
@@ -74,7 +74,11 @@
     </div>
 
     <section class="modal" id="modalEditar"></section>
+    <section class="modal" id="AgregarUsuarioModal"></section>
 
+    
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <script src="../assets/js/Index_Admin.js"></script>
     <script src="js/formUsuarios.js"></script>

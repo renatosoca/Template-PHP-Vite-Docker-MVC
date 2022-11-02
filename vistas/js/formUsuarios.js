@@ -145,3 +145,21 @@ $(document).on("click","#editar_usuario_modal",function (e){
     
 });
 
+
+$(document).on("click","#abrirModalAgregarUsuario",function (e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    $("#AgregarUsuarioModal").load(
+        "../vistas/modales/agregarUsuario.php"
+        );
+
+    $("#AgregarUsuarioModal").addClass("active");
+
+});
+
+$(document).on("click","#close_modal", function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    $("#AgregarUsuarioModal").removeClass("active");
+});

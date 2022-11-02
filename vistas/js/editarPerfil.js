@@ -11,7 +11,7 @@ $(document).on("click",".bottom-edit",function (e){
 
 });
 
-$(document).on("click","#close-modal", function(e){
+$(document).on("click","#close_modal", function(e){
     e.preventDefault();
     e.stopImmediatePropagation();
     $("#editarModalPerfil").removeClass("active");

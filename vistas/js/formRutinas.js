@@ -54,11 +54,6 @@ $(document).on("click","#crearRutinas",function (e){
     
 });
 
-
-
-
-
-
 $(document).on("click",".bottom-delete",function (e){
     e.preventDefault();
     e.stopImmediatePropagation();
@@ -84,7 +79,6 @@ $(document).on("click",".bottom-delete",function (e){
     )
 
 });
-
 
 $(document).on("click",".bottom-edit",function (e){
     e.preventDefault();
@@ -144,4 +138,22 @@ $(document).on("click","#editar_rutina_modal",function (e){
                 
     }
     
+});
+
+$(document).on("click","#abrirModalAgregarRutina",function (e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    $("#agregarRutinaModal").load(
+        "../vistas/modales/agregarRutina.php"
+        );
+
+    $("#agregarRutinaModal").addClass("active");
+
+});
+
+$(document).on("click","#close_modal", function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    $("#agregarRutinaModal").removeClass("active");
 });

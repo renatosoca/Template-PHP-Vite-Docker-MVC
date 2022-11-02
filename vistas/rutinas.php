@@ -46,7 +46,7 @@
         <h2 class="main__title">Rutinas</h2>
 
         <div class="main__new">
-            <a href="registro-usuario.php" class="btn">Nueva Rutina</a>
+            <a id="abrirModalAgregarRutina" class="btn">Nueva Rutina</a>
         </div>
 
         <main class="main__table">
@@ -72,8 +72,11 @@
         </main>
     </div>
 
-    <section class="modal" id="modalEditar">
-    </section>
+    <section class="modal" id="modalEditar"></section>
+    <section class="modal" id="agregarRutinaModal"></section>
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 
     <script src="./../assets/js/Index_Admin.js"></script>
