@@ -46,7 +46,7 @@
                 <div class="swiper-slide slide" style="background-image: url(./assets/images/home1.webp);">
                     <div class="content">
                         <span>Entrena con nosotros</span>
-                        <h3>Hazte más fuerte que tus excusas.</h3>
+                        <h3>Preparate con los mejores</h3>
                         <a href="./contactanos.php" class="btn">Iniciar</a>
                     </div>
                 </div>
@@ -54,15 +54,15 @@
                 <div class="swiper-slide slide" style="background-image: url(./assets/images/home2.webp);">
                     <div class="content">
                         <span>ser fuerte, estar en forma</span>
-                        <h3>Hazte más fuerte que tus excusas.</h3>
+                        <h3>Hazte más fuerte que tus excusas</h3>
                         <a href="./contactanos.php" class="btn">Iniciar</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide" style="background-image: url(./assets/images/home3.webp);">
                     <div class="content">
-                        <span>ser fuerte, estar en forma</span>
-                        <h3>Hazte más fuerte que tus excusas.</h3>
+                        <span>en cuerpo y mente</span>
+                        <h3>con entrenamientos personalizados.</h3>
                         <a href="./contactanos.php" class="btn">Iniciar</a>
                     </div>
                 </div>
@@ -84,23 +84,23 @@
         <div class="content">
             <span>Sobre Nosotros</span>
             <h3 class="title">Cada día es una oportunidad para ser mejor</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa? Consequatur, distinctio?</p>
+            <p>Pasaras dias de entrenamiento sin pensar en otra cosa que solo en ti</p>
             <div class="box-container">
                 <div class="box">
                     <h3><i class="fas fa-check"></i>Cuerpo y Mente</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Tendras que tener la mayor concentracion en cada entrenamiento</p>
                 </div>
                 <div class="box">
                     <h3><i class="fas fa-check"></i>Vida Saludable</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Con entrenamientos que te ayudaran fisicamente</p>
                 </div>
                 <div class="box">
                     <h3><i class="fas fa-check"></i>Estratejias</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Los mejores tips de nuestros coach para el dia a dia</p>
                 </div>
                 <div class="box">
                     <h3><i class="fas fa-check"></i>Ejercicio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                    <p>Entrenamientos con alto grado de dificultad y esfuerzo</p>
                 </div>
             </div>
             <a href="./contactanos.php" class="btn">Escribenos</a>
@@ -122,7 +122,7 @@
                 <div class="content">
                     <img loading="lazy" src="./assets/images/icon-1.png" alt="">
                     <h3>Culturismo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <p>Tonifica esos musculos que siempre quisite tener</p>
                     <a href="./contactanos.php" class="btn">Escribenos</a>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                 <div class="content">
                     <img loading="lazy" src="./assets/images/icon-2.png" alt="">
                     <h3>Gym por Hombres</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <p>Ambientes exclusivo de hombres donde podran compartir sus estrategias de entrenamiento</p>
                     <a href="./contactanos.php" class="btn">Escribenos</a>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                 <div class="content">
                     <img loading="lazy" src="./assets/images/icon-3.png" alt="icono 3">
                     <h3>gym para Mujeres</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <p>Ambientes exclusivo de mujeres donde podran compartir sus estrategias de entrenamiento</p>
                     <a href="./contactanos.php" class="btn">Escribenos</a>
                 </div>
             </div>
@@ -162,7 +162,7 @@
 
             <h3>Precios asequibles</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
+            <p>Precios a la medida de cada cliente dependiendo de sus rutinas</p>
 
             <p> <i class="fas fa-check"></i> Ejercicio de Cardio </p>
             <p> <i class="fas fa-check"></i> Levantamiento de Pesas </p>
@@ -286,7 +286,7 @@
 
         <h3>Obten hasta un 50% de descuento</h3>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis inventore quam vitae quod illum incidunt.
+        <p>Trae a un amigo y obten un descuento especial por su inscripcion
         </p>
 
         <a href="./contactanos.php" class="btn">Obtener Descuento</a>
@@ -303,7 +303,7 @@
                 clientes
             </h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat, excepturi odit obcaecati a voluptatibus earum quisquam?</p>
+            <p>Tenemos una gran aceptacion y reconocimiento de cada uno de nuestro usuarios inscritos</p>
         </div>
 
         <div class="swiper review-slider">
