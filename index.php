@@ -180,7 +180,7 @@
             </div>
 
             <div class="list">
-                <p> <i class="fas fa-check"></i> personal training </p>
+                <p> <i class="fas fa-check"></i> personal trai </p>
                 <p> <i class="fas fa-check"></i> Ejercicio de Cardio </p>
                 <p> <i class="fas fa-check"></i> Levantamiento de Pesas </p>
                 <p> <i class="fas fa-check"></i> Plan de Dietas </p>
