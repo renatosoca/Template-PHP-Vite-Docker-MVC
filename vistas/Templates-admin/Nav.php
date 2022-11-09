@@ -35,6 +35,14 @@
                     </div>
                     <span class="nav__links-text">Usuarios</span>
                 </a>
+                <a href="hmedico.php" class="nav__links">
+                    <div class="nav__icon">
+                        <i title="Usuarios" class="fa-solid fa-suitcase-medical"></i>
+                        
+                    </div>
+                    <span class="nav__links-text">Historial Medico</span>
+                    
+                </a>
 
                 <a href="perfil.php" class="nav__links">
                     <div class="nav__icon">
