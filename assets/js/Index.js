@@ -35,7 +35,7 @@ const sr = ScrollReveal({
     duration: 2500,
     delay: 400,
 });
-sr.reveal(`.about, .review`)
-sr.reveal(`.features`,{origin:"left"})
-sr.reveal(`.trainers, .info-plans, .basic, .plan, .footer-box`,{origin:"bottom", interval:500})
+sr.reveal(`.about, .trainers`)
+sr.reveal(`.features, .review`,{origin:"left"})
+sr.reveal(`.info-plans, .basic, .plan, .footer-box`,{origin:"bottom", interval:500})
 sr.reveal(` .home-slider`,{origin:"top"})
