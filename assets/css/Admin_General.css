@@ -211,6 +211,7 @@ h1,h2,h3,h4{
 }
 .nav__container.active .nav__links-text{
     opacity: 0;
+    pointer-events: none;
 }
 /* Fin Estilos del ASIDE IZQUIERDO */
 
