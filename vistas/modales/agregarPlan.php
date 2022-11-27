@@ -8,8 +8,8 @@ if ($_SESSION['permiso'] == "0") {
 ?>
 
 <div class="modal__container">
-    <div class="modal__title">
-        <h1 class="text__title">Agregar Plan</h1>
+    <div class="user__top">
+        <h1 class="user__title">Agregar Plan</h1>
         <i id="close_modal" class="fa-solid fa-circle-xmark"></i>
     </div>
 

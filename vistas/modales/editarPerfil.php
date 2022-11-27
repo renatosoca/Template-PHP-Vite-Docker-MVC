@@ -8,16 +8,13 @@ $sql = "SELECT * from info_login WHERE id = '".$id."'";
 
 $datos = consultarDatos($sql);
 
-
-
-
 ?>
 
 
 <div class="modal__container">
     <div class="modal__title">
         <h1 class="text__title">Modificar Perfil</h1>
-        <i id="close_modal" class="fa-solid fa-circle-xmark"></i>
+        <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
     </div>
 
     <form class="edit__form">
@@ -27,14 +24,14 @@ $datos = consultarDatos($sql);
             <input type="text" id="usuario_editar_perfil" value="<?php echo $datos["usuario"]?>">
         </div>
 
-        <div class="edit__input">
+        <!-- <div class="edit__input">
             <label for="">Nombre</label>
-            <input type="text" id="nombre_editar_perfil" value="<?php echo $datos["nombre"]?>">
-        </div>
+            <input type="text" id="nombre_editar_perfil" >
+        </div> -->
 
         <div class="edit__input">
             <label for="">Cambiar Contraseña</label>
-            <input type="password" id="passantigua_editar_perfil" placeholder="Contraseña Antigua">
+            <input type="password" id="passantigua_editar_perfil" placeholder="Contraseña Antigua" value="<?php echo $datos["password"]?>">
             <input type="password" id="passnueva_editar_perfil" placeholder="Contraseña Nueva">
         </div>
 

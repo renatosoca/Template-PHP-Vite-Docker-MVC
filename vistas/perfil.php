@@ -72,7 +72,7 @@ include_once("../config/sesion.php");
                     <div class="notification__container">
                         <h3 class="text__title">Notificaciones</h3>
                         <div class="notification__content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nihil! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, consequuntur.</p>
+                            <p>Recuerda activar la notificacion de tus rutinas diarias</p>
                         </div>
                     </div>
                 </div>
@@ -85,42 +85,42 @@ include_once("../config/sesion.php");
                     <div class="items__container">
                         <h4>Lunes</h4>
                         <div class="items__content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Sentadillas con barra:4 series x 8/10 reps. Prensa en máquina:4 series x 8/10 reps. Peso muerto:4 series x 8/10 reps.Zancada con mancuernas: 4 series x 8/10 reps.</p>
                         </div>
                     </div>
 
                     <div class="items__container">
                         <h4>Martes</h4>
                         <div class="items__content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Press de banca con barra en banco plano: 4 series x 8/10 reps. Press banco inclinado con mancuernas: 4 series x 8/10 reps. Aperturas banco plano/inclinado (alternar semanalmente): 4 series x 8/10 reps.</p>
                         </div>
                     </div>
 
                     <div class="items__container">
                         <h4>Miercoles</h4>
                         <div class="items__content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Dominadas: 4 series x 8/10 reps. Remo sentado: 4 series x 8/10 reps. Jalón al pecho polea alta: 4 series x 8/10 reps.</p>
                         </div>
                     </div>
 
                     <div class="items__container">
                         <h4>Jueves</h4>
                         <div class="items__content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Elevaciones de piernas: 4 series x 20 reps. Crunches: 4 series x 20 reps. Oblíquos con polea: 4 series x 20 reps.</p>
                         </div>
                     </div>
 
                     <div class="items__container">
                         <h4>Viernes</h4>
                         <div class="items__content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Press hombro sentado con barra: 4 series x 8/10 reps. Elevaciones laterales con mancuernas: 4 series x 8/10 reps. Press sentado con mancuernas: 4 series x 8/10 reps.</p>
                         </div>
                     </div>
 
                     <div class="items__container">
                         <h4>Sabado</h4>
                         <div class="items__content">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Curl bíceps con barra: 4 series x 8/10 reps. Francés de tríceps barra Z: 4 series x 8/10 reps. Bíceps (curl) banco inclinado: 4 series x 8/10 reps.</p>
                         </div>
                     </div>
                 </div>

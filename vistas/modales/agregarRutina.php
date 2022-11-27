@@ -8,8 +8,8 @@ if ($_SESSION['permiso'] == "0") {
 ?>
 
 <div class="modal__container">
-    <div class="modal__title">
-        <h1 class="text__title">Agregar Rutina</h1>
+    <div class="user__top">
+        <h1 class="user__title">Agregar Rutina</h1>
         <i id="close_modal" class="fa-solid fa-circle-xmark"></i>
     </div>
 
@@ -47,7 +47,7 @@ if ($_SESSION['permiso'] == "0") {
         </div>
 
         <div class="routines__btn">
-            <input id="crearRutinas" type="submit" class="btn btn-routine">Crear</input>
+            <input id="crearRutinas" type="submit" class="btn btn-routine">
         </div>
 
     </form>

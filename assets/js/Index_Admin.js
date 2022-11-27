@@ -11,10 +11,9 @@ function ListarEventos(){
 function MostrarNav(e){
     e.stopPropagation();
     navbar.classList.toggle('active')
-    console.log(navbar)
 };
 
-const sr = ScrollReveal({
+/* const sr = ScrollReveal({
     origin: "top",
     distance: '60px',
     duration: 2500,
@@ -22,4 +21,4 @@ const sr = ScrollReveal({
     reset: true,
 });
 
-sr.reveal(`.table`);
+sr.reveal(`.table`); */

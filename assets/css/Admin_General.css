@@ -45,7 +45,7 @@ a{
 input{
     width: 100%;
     padding: 1rem;
-    border: solid .1rem var(--black);
+    border-bottom: solid .1rem var(--black);
     font-size: 1.5rem;
 }
 img{
@@ -94,6 +94,9 @@ h1,h2,h3,h4{
 }
 .btn__rigth{
     right: 0;
+}
+.btn-plan{
+    margin: 2rem auto;
 }
 
 
@@ -298,6 +301,7 @@ h1,h2,h3,h4{
     right: 0;
     bottom: 0;
     opacity: 0;
+    z-index: 1;
     pointer-events: none;
     transition: opacity .6s .9s;
     --transform: translateY(-100vh);
@@ -324,13 +328,17 @@ h1,h2,h3,h4{
     position: relative;
     font-size: 2rem;
 }
-.modal__title i{
+#close_modal,
+#close-modal{
     position: absolute;
-    top: -.5rem;
-    right: .5rem;
-    font-size: 3rem;
-    color: red;
-    cursor: pointer;
+    right: 0;
+    top: 0rem;
+    color: #d31414;
+    font-size: 2.5rem;
+}
+.user__top{
+    border-bottom: .1rem solid rgb(183, 179, 179);
+    position: relative;
 }
 .modal__form{
     padding: 1rem;
@@ -338,13 +346,43 @@ h1,h2,h3,h4{
 .modal__input{
     padding-bottom: 1rem;
 }
-.modal__input input{
-    border: .1rem solid #000;
-    border-radius: 1rem;
-}
 .modal__input .btn{
     margin: auto;
 }
+
+/* Crear RUTINAS */
+.routines__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+.routines__inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-right: 0 auto;
+}
+.btn-routine{
+    margin: 2rem auto 5rem auto;
+}
+
+/* Fin de Crear RUTINAS */
+
+/* Crear PLANES */
+.plans__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1rem;
+}
+.plans__inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
+}
+/* Fin de Crear PLANES */
 
 
 
