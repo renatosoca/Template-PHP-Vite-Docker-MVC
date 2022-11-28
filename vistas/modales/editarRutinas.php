@@ -14,7 +14,7 @@ $datos = consultarDatos($sql);
 
 <div class="modal__container">
     <div class="user__top">
-        <h1 class="user__title">Agregar Rutina</h1>
+        <h1 class="user__title">Actualizar Rutina</h1>
         <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
     </div>
 

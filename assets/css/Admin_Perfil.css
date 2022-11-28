@@ -1,84 +1,48 @@
 /* Estilos para el PERFIL */
 .profile{
-    border: solid .2rem var(--black);
-    display: flex;
-    flex-direction: column;
-}
-.profile__details{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 4px rgba(109,106,212,0.63);
+    border-radius: 1rem;
+    padding: 3rem;
 }
-.profile__view{
-    display: flex;
+.profile .btn{
+    width: 100%;
+    text-align: center;
+}
+.profile__left{
     padding: 2rem;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    margin: 2rem 2rem 0 2rem;
 }
-.profile__img{
-    width: 25rem;
-    height: 25rem;
-    background: var(--black);
-    border-radius: 1.3rem;
+.profile__left img{
+    border-radius: 50%;
 }
-.profile__content{
-    padding: 2rem;
-    display: block;
+.profile__form{
+    margin-top: 2rem;
     width: 100%;
 }
-.profile__plan{
-    display: flex;
-    justify-content: space-between;
-    gap: 10rem;
-    padding: 2rem;
-    align-items: center;
-}
-.profile__plan small{
-    padding: 1rem 2rem;
-    background: var(--ligth-blue);
-    border-radius: .5rem;
-    width: 13rem;
-    text-align: center;
-}
-/* Visualizar las notificaciones en el Perfil */
-.profile__notification{
-    padding: 2rem 2rem 0 2rem;
-}
-.profile__notification .btn__edit{
-    color: #fff;
-}
-.notification__btn{
-    display: flex;
-    justify-content: flex-end;
-}
-.notification__content{
-    margin-top: 1rem;
-    padding: 2rem;
-    border: solid .2rem var(--black);
-}
-/* Para Visualizar las rutinas en el perfil */
-.profile__routines{
-    text-align: center;
-    border-bottom: solid .2rem var(--black-variant);
+.profile__title{
+    border-bottom: .2rem solid var(--black);
     width: max-content;
-    margin: 2rem auto 0 auto;
+    margin-bottom: 2rem;
 }
-.profile__items{
-    margin-top: 1rem;
+.profile__center{
+    padding: 2rem;
+}
+.profile__rigth{
+    padding: 2rem;
+}
+.profile__rutinas-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    padding: 1rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
 }
-.items__container{
-    padding: 1.5rem 1rem;
-    text-align: center;
-   
+.profile__content{
+    display: grid;
+    justify-content: space-between;
 }
-.items__content{
-    border: solid .2rem black;
-    padding: 1rem;
-}
-/* Fin estilos del PERFIL */
+
 
 
 /* Editar PERFIL */
@@ -102,4 +66,19 @@
 }
 .edit__btn{
     margin: 0 auto;
+}
+
+@media screen and (max-width:1000px){
+    .profile{
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+    .profile__rigth{
+        grid-column: 1/3;    
+    }
+}
+
+@media screen and (max-width:800px){
+    .profile__center{
+        grid-row: 2/3;    
+    }
 }

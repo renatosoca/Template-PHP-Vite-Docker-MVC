@@ -64,7 +64,6 @@ h1,h2,h3,h4{
     text-align: center;
 }
 .btn{
-    all: unset;
     width: max-content;
     background: var(--bg-nav);
     color: var(--white);

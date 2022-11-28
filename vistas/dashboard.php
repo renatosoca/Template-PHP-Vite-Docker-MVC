@@ -39,19 +39,19 @@
             <div class="dbd__box">
                 <h2>2</h2>
                 <h3 class="dbd__info">Usuarios Registrados</h3>
-                <a href="./usuarios.html" class="btn">Mirar Usuarios</a>
+                <a href="./usuarios.php" class="btn">Mirar Usuarios</a>
             </div>
 
             <div class="dbd__box">
                 <h2>2</h2>
                 <h3 class="dbd__info">Clientes Registrados</h3>
-                <a href="#" class="btn">Mirar Clientes</a>
+                <a href="./usuarios.php" class="btn">Mirar Clientes</a>
             </div>
 
             <div class="dbd__box">
                 <h2>2</h2>
                 <h3 class="dbd__info">Planes Registrados</h3>
-                <a href="./planes.html" class="btn">Mirar Planes</a>
+                <a href="./planes.php" class="btn">Mirar Planes</a>
             </div>
         </main>
     </div>
