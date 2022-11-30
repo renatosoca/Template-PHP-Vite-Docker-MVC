@@ -1,4 +1,4 @@
-$(document).on("click",".bottom-edit",function (e){
+$(document).on("click",".cambiar-contra",function (e){
     e.preventDefault();
     e.stopImmediatePropagation();
 

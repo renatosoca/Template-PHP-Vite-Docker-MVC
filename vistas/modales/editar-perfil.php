@@ -1,15 +1,10 @@
 <div class="edit">
-    <h2 class="edit__title">Modificar Perfil</h2>
+    <h2 class="edit__title">Cambiar contraseña</h2>
 
     <form action="" class="edit__form">
         <div class="edit__input">
             <label for="">Usuario</label>
             <input type="text" placeholder="Ingrese su Usuario">
-        </div>
-
-        <div class="edit__input">
-            <label for="">Nombre</label>
-            <input type="text" placeholder="Ingrese su Nombre">
         </div>
 
         <div class="edit__input">

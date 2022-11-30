@@ -48,7 +48,7 @@ include_once("../config/sesion.php");
                     <input class="btn" type="submit" value="Cambiar Foto">
                 </form>
                 <div class="notification__btn" id="table-body">
-                    <span id="<?php echo $_SESSION["id"] ?>" class="btn">Cambiar Contraseña</span>
+                    <span id="<?php echo $_SESSION["id"] ?>" class="btn cambiar-contra">Cambiar Contraseña</span>
                 </div>
 
             </div>
