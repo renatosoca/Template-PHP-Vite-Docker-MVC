@@ -53,7 +53,7 @@
             
                 <div class='table__btn'>
                     <span class='icon btn__asigne' id='" .$row["id"]. "'>
-                        <i class='fa-solid fa-repeat btn__asigne'></i>
+                        <i id='abrirModalAsignarRutina' class='fa-solid fa-repeat btn__asigne'></i>
                     </span>
 
                     <span class='icon bottom-edit' id='" .$row["id"]. "'>

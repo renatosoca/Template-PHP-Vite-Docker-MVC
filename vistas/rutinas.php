@@ -74,6 +74,7 @@
 
     <section class="modal" id="modalEditar"></section>
     <section class="modal" id="agregarRutinaModal"></section>
+    <section class="modal" id="asignarRutinaModal"></section>
 
     <!-- SCROLLREVEAL -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>

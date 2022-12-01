@@ -10,7 +10,7 @@ if ($_SESSION['permiso'] == "0") {
 <div class="modal__container">
     <div class="user__top">
         <h1 class="user__title">Agregar Plan</h1>
-        <i id="close_modal" class="fa-solid fa-circle-xmark"></i>
+        <i id="close_modal" class="fa-solid fa-circle-xmark close_modal"></i>
     </div>
 
     <form action="" class="Plans__create" id="crearPlan">

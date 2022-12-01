@@ -327,13 +327,15 @@ h1,h2,h3,h4{
     position: relative;
     font-size: 2rem;
 }
-#close_modal,
-#close-modal{
+.close_modal{
     position: absolute;
     right: 0;
     top: 0rem;
     color: #d31414;
     font-size: 2.5rem;
+}
+.close_modal:hover{
+    transform: scale(1.1);
 }
 .user__top{
     border-bottom: .1rem solid rgb(183, 179, 179);
@@ -364,6 +366,15 @@ h1,h2,h3,h4{
 }
 .btn-routine{
     margin: 2rem auto 5rem auto;
+}
+
+/* Asignar Rutinas */
+.select_rutina{
+    border-bottom: .1rem solid var(--bg-secundary);
+    padding: 1rem;
+}
+.btn__full{
+    width: 100%;
 }
 
 /* Fin de Crear RUTINAS */

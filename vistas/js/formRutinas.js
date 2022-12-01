@@ -46,12 +46,9 @@ $(document).on("click","#crearRutinas",function (e){
                 }else{
                     alertify.error("Error, no se pudo crear la rutina.");
                 }
-                
-                
             }
         )
     }
-    
 });
 
 $(document).on("click",".bottom-delete",function (e){
@@ -156,4 +153,23 @@ $(document).on("click","#close_modal", function(e){
     e.preventDefault();
     e.stopImmediatePropagation();
     $("#agregarRutinaModal").removeClass("active");
+});
+
+
+$(document).on("click","#abrirModalAsignarRutina",function (e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    $("#asignarRutinaModal").load(
+        "../vistas/modales/asignar_rutina.php"
+        );
+
+    $("#asignarRutinaModal").addClass("active");
+
+});
+
+$(document).on("click","#close__modal", function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    $("#asignarRutinaModal").removeClass("active");
 });

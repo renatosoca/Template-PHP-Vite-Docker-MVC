@@ -29,13 +29,6 @@
     border-bottom: .1rem solid rgb(183, 179, 179);
     position: relative;
 }
-#close_modal{
-    position: absolute;
-    right: 0;
-    top: 0rem;
-    color: #d31414;
-    font-size: 2.5rem;
-}
 .user__two{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,8 +67,7 @@
     color: #f1f1f1;
     transition: transform .5s ease;
 }
-.user__btn:hover,
-#close_modal:hover{
+.user__btn:hover{
     transform: scale(1.1);
 }
 /* Fin de REGISTRO USUARIOs */

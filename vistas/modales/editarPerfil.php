@@ -13,8 +13,8 @@ $datos = consultarDatos($sql);
 
 <div class="modal__container">
     <div class="modal__title">
-        <h1 class="text__title">Modificar Perfil</h1>
-        <i id="close-modal" class="fa-solid fa-circle-xmark"></i>
+        <h1 class="text__title">Cambiar Contraseña</h1>
+        <i id="close_modal" class="fa-solid fa-circle-xmark close_modal"></i>
     </div>
 
     <form class="edit__form">
