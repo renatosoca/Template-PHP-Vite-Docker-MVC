@@ -1,0 +1,22 @@
+{
+    "name": "rena/e-commerce",
+    "description": "Proyecto de Practica",
+    "type": "project",
+    "authors": [
+        {
+            "name": "DevRenato",
+            "email": "u18215194@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Router\\": "./",
+            "Controllers\\": "./controllers",
+            "Models\\": "./models",
+            "Classes\\": "./classes"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
