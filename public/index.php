@@ -1,22 +1,35 @@
 <?php
+require_once __DIR__ . '/../app/core/Main.php';
 
-  require_once __DIR__.'/../includes/App.php';
+use App\Controllers\AuthController;
+use App\Core\Router;
 
-use Controllers\ApiLoginController;
-use Router\Router;
-  use Controllers\PageController;
+//ROUTES PUBLICS
+Router::get('/', [AuthController::class, 'authUser']);
+Router::post('/', [AuthController::class, 'authUser']);
 
-  $router = new Router();
+Router::get('/logout', function() {
+  session_start();
 
-  //APIs
-  $router->get('/api/auth/login', [ApiLoginController::class, 'login']);
-  $router->get('/api/auth/register', [ApiLoginController::class, 'register']);
+  $_SESSION = [];
+  
+  Router::redirect('/');
+});
 
-  //Paginas Publicas
-  $router->get( '/', [ PageController::class, 'index' ] );
-  $router->get( '/nosotros', [ PageController::class, 'about' ] );
-  $router->get( '/tienda', [ PageController::class, 'store' ] );
-  $router->get( '/404', [ PageController::class, 'error' ] );
+Router::get('/register', [AuthController::class, 'registerUser']);
+Router::post('/register', [AuthController::class, 'registerUser']);
 
-  $router->checkRoutes();
-?>
+Router::get('/confirm-account/:token', [AuthController::class, 'confirmAccount']);
+Router::get('/message', function() {
+  Router::render('auth/message', 'AuthLayout', [
+    'title' => 'Mensaje de confirmación',
+  ]);
+});
+
+Router::get('/forgot-password', [AuthController::class, 'forgotPassword']);
+Router::post('/forgot-password', [AuthController::class, 'forgotPassword']);
+
+Router::get('/reset-password/:token', [AuthController::class, 'resetPassword']);
+Router::post('/reset-password/:token', [AuthController::class, 'resetPassword']);
+
+Router::dispatch();
